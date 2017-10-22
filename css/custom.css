@@ -1,0 +1,271 @@
+/* your styles go here */
+p{
+	text-align: justify
+}
+
+.lead{
+	text-align: center
+}
+
+.overlay p{
+	text-align: center
+}
+
+.modal-header{
+	background-color: #4fbfa8;
+	color: #fff;
+	padding: 20px;
+}
+.modal-body{
+	padding: 20px;
+	padding-left: 40px;
+}
+.modal-footer{
+	background-color: #fff;
+}
+.trip-img{
+	width: 60px;
+	height: 40px;
+	  float: left;
+  border-radius: 5px;
+	margin-right: 30px;
+}
+.row{
+	margin-bottom: 20px;
+}
+.trip-loc{
+	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#main-detail {
+  padding: 20px 0;
+  max-width: 900px;
+  margin: 0 auto 0;
+  display: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  text-align: left;
+}
+#main-detail .close {
+  position: relative;
+  font-size: 50px;
+  z-index: 100;
+}
+#main-detail .buttons {
+  text-align: center;
+  margin-top: 40px;
+}
+#main-detail .buttons a {
+  margin: 0 10px 10px;
+}
+#main-detail h1 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 10px 0;
+  margin: 22px 0;
+  text-align: center;
+  border-bottom: solid 1px #ccc;
+  border-top: solid 1px #ccc;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+@media (max-width: 767px) {
+  #main-detail h1 {
+    font-size: 30px;
+  }
+}
+
+
+.img-large{
+	width: 100%;
+	height: auto;
+}
+
+
+.reference-item .reference-custom span {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.reference-item .reference-custom span .overlay {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  -webkit-box-sizing: 'border-box';
+  -moz-box-sizing: 'border-box';
+  box-sizing: 'border-box';
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.reference-item .reference-custom span .overlay h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.reference-item .reference-custom span img {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.reference-item .reference-custom span:hover .overlay,
+.reference-item .reference-custom span:focus .overlay {
+  display: block;
+  top: 0;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  cursor: pointer; cursor: hand;
+}
+.reference-item .reference-custom span:hover img,
+.reference-item .reference-custom span:focus img {
+  -webkit-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+
+
+#intro .item-adv {
+  height: 100%;
+  background: url('../img/adventure.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-backface-visibility: hidden;
+}
+
+#intro .item-loc {
+  height: 100%;
+  background: url('../img/destination.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-backface-visibility: hidden;
+}
+
+
+/*----------------------------------*/
+
+
+/* This default styling works for large screen devices (All devices with resolution of 1200px or above), for example laptops */
+
+#frame > iframe{
+  width: 100%;
+  height: 800px;
+}
+
+/* This media query works for medium screen devices (All devices with resolution from 992px to 1199px), for example Computers */
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+  #frame > iframe{
+    width: 100%;
+    height: 600px;
+  }  
+}
+
+/* This media query works for small screen devices (All devices with resolution from 768px to 991px), for example tablets */
+
+@media (min-width: 768px) and (max-width: 991px){
+  #frame > iframe{
+    width: 100%;
+    height: 450px;
+  }
+}
+
+/* This media query works for extra small screen devices (All devices with below resolution of 767px), for example Iphones, Smart Phones */
+
+@media (max-width: 767px){
+  #frame > iframe{
+    width: 100%;
+    height: 250px;
+  }
+}
+
+
+
+
+
+
+
+/* Cloud Animation*/
+
+header{
+    color: #fff;
+    height: 100vh;
+}
+.header-bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.animation-bg .header-bg{
+    position: relative;
+    text-align: center;
+}
+.animation-bg-cloud .header-bg:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    background: url(../img/clouds.png) repeat-y;
+    -webkit-animation: backgroundScroll 20s linear infinite;
+    animation: backgroundScroll 20s linear infinite;
+}
+@-webkit-keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: 100% 100%;}
+}
+ 
+@keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: 100% 100%;}
+}
+.animation-bg .header-bg:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+
+.bg-transparent{
+    background-color: transparent;
+    font-family: 'Oxygen';
+    font-weight: 300;
+    padding-top: 30px;
+    transition: all 0.4s ease-in-out;
+}
+.modifide-nav{
+    padding: 0 15px;
+}
+
+@media (max-width: 47.9rem){
+    .bg-transparent{
+        background-color: #fff;
+    }
+}
+
+
