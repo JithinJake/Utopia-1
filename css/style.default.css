@@ -154,6 +154,38 @@ UNIVERSAL SECTION STYLES
 .text-parallax.parallax-image1 {
   background: url('../img/parallax1.jpg') center center no-repeat fixed;
 }
+
+#a43 {
+  position: relative;
+  height: 100%;
+}
+
+#k43 {
+  position: relative;
+  height: 100%;
+}
+
+
+#a43 .item {
+  height: 100%;
+  background: url('../img/a43.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-backface-visibility: hidden;
+}
+
+#k43 .item {
+  height: 100%;
+  background: url('../img/k43.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-backface-visibility: hidden;
+}
+
 @media (max-width: 991px) {
   .text-parallax {
     padding-top: 80px;
@@ -436,12 +468,12 @@ WORKS / REFERENCES
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.reference-item .reference a:hover .overlay,
-.reference-item .reference a:focus .overlay {
+.reference-item .reference a .overlay,
+.reference-item .reference a .overlay {
   display: block;
   top: 0;
   opacity: 0.8;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=60);
 }
 .reference-item .reference a:hover img,
 .reference-item .reference a:focus img {

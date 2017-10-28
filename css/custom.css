@@ -117,12 +117,12 @@ p{
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.reference-item .reference-custom span:hover .overlay,
-.reference-item .reference-custom span:focus .overlay {
+.reference-item .reference-custom span .overlay,
+.reference-item .reference-custom span .overlay {
   display: block;
   top: 0;
   opacity: 0.8;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=60);
   cursor: pointer; cursor: hand;
 }
 .reference-item .reference-custom span:hover img,

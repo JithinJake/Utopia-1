@@ -45,6 +45,32 @@
     <!-- Mordernizr -->
     <script src="js/modernizr-2.6.2.min.js"></script>
 
+
+    <style type="text/css">
+        .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(img/ajax-loader.gif) center no-repeat #fff;
+}
+    </style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+<script type="text/javascript">
+    $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+    });
+</script>
+
+
     <!-- Responsivity for older IE -->
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
@@ -262,10 +288,29 @@ _________________________________________________________ -->
         <!-- /.section -->
 
         <!-- *** SERVICES END *** --> 
-        <div id="frame" ata-animate="fadeInUp">
-<iframe frameborder="0" class="juxtapose" width="100%" height="352.43116578793206" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=8d75bfc6-b479-11e7-b263-0edaf8f81e27"></iframe>
-</div>
-       
+        <!-- *** SHOWCASE ***
+_________________________________________________________ -->
+        <div id="a43" class="clearfix">
+            <div class="item">
+                <div class="container">
+                    <div class="row">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="k43" class="clearfix">               
+            <div class="item">
+                <div class="container">
+                    <div class="row">
+                        
+                    </div>
+                </div>
+            </div>
+                    
+        </div>
+
 
         <!-- *** TESTIMONIALS ***
 _________________________________________________________ -->
@@ -600,5 +645,7 @@ _________________________________________________________ -->
     <script src="js/custom.js"></script>
 
 </body>
+
+<div class="se-pre-con"></div>
 
 </html>
