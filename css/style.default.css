@@ -212,14 +212,14 @@ INTRO
   -webkit-backface-visibility: hidden;
 }
 #intro .item .logo {
-  margin-bottom: 120px;
+  margin-bottom: 0px;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-backface-visibility: hidden;
 }
 @media (max-width: 767px) {
   #intro .item .logo {
-    margin-bottom: 50px;
+    margin-bottom: -100px;
   }
 }
 #intro .item h1 {
