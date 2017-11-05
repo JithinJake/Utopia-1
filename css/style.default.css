@@ -1175,8 +1175,8 @@ strong {
   }
 }
 .navbar-default {
-  background-color: rgba(244, 244, 244, .4);
-	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  background-color: rgba(244, 244, 244, .9) !important;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.9);
  
 }
 .navbar-default .navbar-brand {

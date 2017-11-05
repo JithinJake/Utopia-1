@@ -1,850 +1,1752 @@
-  <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+﻿  <!DOCTYPE html>
+  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <html class="no-js">
+  <!--<![endif]-->
 
-<head>
-    <meta charset="utf-8">
-    <meta name="robots" content="all,follow">
-    <meta name="googlebot" content="index,follow,snippet,archive">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+	<meta charset="utf-8">
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Utopia,Tours,advice,kerala,india,gods own country">
 
-    <title>UTOPIA Tours and Advice</title>
+	<title>UTOPIA Tours and Advice</title>
 
-    <meta name="keywords" content="Utopia,Tours,advice,kerala,india,gods own country">
+	<!-- Loading Spinner style -->
+	<style type="text/css">
+	.no-js #loader { display: none;  }
+	.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+	.se-pre-con {
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background: url(img/ajax-loader.gif) center no-repeat #fff;
+	}
+	</style>
 
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100' rel='stylesheet' type='text/css'>
-    <!-- Add to cart styles -->
-    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100' rel='stylesheet' type='text/css'>
+	<!-- Add to cart styles -->
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 
-    <!-- Bootstrap and Font Awesome css -->
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap and Font Awesome css -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Theme stylesheet -->
-    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+	<!-- Theme stylesheet -->
+	<link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
 
-    <!-- Custom stylesheet - for your changes -->
-    <link href="css/custom.css" rel="stylesheet">
+	<!-- Custom stylesheet - for your changes -->
+	<link href="css/custom.css" rel="stylesheet">
 
-    <!-- owl carousel css -->
+	<!-- owl carousel css -->
 
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.css" rel="stylesheet">
 
-    <!-- CSS Animations -->
-    <link href="css/animate.css" rel="stylesheet">
+	<!-- CSS Animations -->
+	<link href="css/animate.css" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.png">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.png">
 
-    <!-- Mordernizr -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- Mordernizr -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
 
+	<!-- Responsivity for older IE -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-<style type="text/css">
-        .no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: url(img/ajax-loader.gif) center no-repeat #fff;
-}
-</style>
+	<!-- ajax for spinner -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<script type="text/javascript">
+	$(window).load(function() {
+		  // Animate loader off screen
+		  $(".se-pre-con").fadeOut("slow");;
+	  });
+	</script>
 
-<script type="text/javascript">
-    $(window).load(function() {
-        // Animate loader off screen
-        $(".se-pre-con").fadeOut("slow");;
-    });
-</script>
-
-
-    <!-- Responsivity for older IE -->
-    <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
-<![endif]-->
 </head>
 
 <body data-spy="scroll" data-target="#navigation" data-offset="120">
-
-    <!-- *** NAVBAR *** -->
-
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand scrollTo" href="#intro">Utopia</a>
-            </div>
-
-            <div class="navbar-collapse collapse" id="navigation">
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li onclick="window.location = 'index.html';"><a href="./index.html">Home</a>
-                    </li>
-                    <li onclick="window.location = 'adventures.html';"><a href="adventures.html">Adventures</a>
-                    </li>
-                    <li class="active"><a href="#">Destinations</a>
-                    </li>                
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-
-        </div>
-    </div>
-    <!-- /#navbar -->
-
-    <!-- *** NAVBAR END *** -->
-
-    
-<!-- ******************************************* -->  
-
-
-    
-    <!--Cart Section -->
-    
-            
-   <div class="cd-cart-container empty">
-	<a href="#0" class="cd-cart-trigger">
-		Cart
-		<ul class="count"> <!-- cart items count -->
-			<li>0</li>
-			<li>0</li>
-		</ul> <!-- .count -->
-	</a>
-
-	<div class="cd-cart">
-		<div class="wrapper">
-			<header>
-				<h2>Cart</h2>
-				<span class="undo">Item removed. <a href="#0">Undo</a></span>
-			</header>
-			
-			<div class="body">
-				<ul>
-					<!-- products added to the cart will be inserted here using JavaScript -->
+	<!-- *** NAVBAR *** -->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand scrollTo" href="#intro">Utopia</a>
+			</div>
+			<div class="navbar-collapse collapse" id="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					<li onclick="window.location = 'index.html';"><a href="./index.html">Home</a>
+					</li>
+					<li onclick="window.location = 'adventures.html';"><a href="adventures.html">Adventures</a>
+					</li>
+					<li class="active"><a href="#">Destinations</a>
+					</li>                
 				</ul>
 			</div>
-
-			<footer>
-				
-			</footer>
+			<!--/.nav-collapse -->
 		</div>
-	</div> <!-- .cd-cart -->
-</div> <!-- cd-cart-container --> 
-   
-   
-   <!-- /Cart section -->
-    
-    
-    
-    
+	</div>
+	<!-- /#navbar -->
+	<!-- *** NAVBAR END *** -->
+	<!-- ******************************************* -->  
+	<!--Cart Section -->
+	<div class="cd-cart-container empty">
+		<a href="#0" class="cd-cart-trigger">Cart
+		  <ul class="count"> <!-- cart items count -->
+			 <li>0</li>
+			 <li>0</li>
+		 </ul> <!-- .count -->
+		</a>
+		<div class="cd-cart">
+			<div class="wrapper">
+				<header class="cart-header">
+					<h2>Your Trip Plan</h2>
+				</header>
+				<div class="body">
+					<ul>
+						<!-- products added to the cart will be inserted here using JavaScript -->
+					</ul>
+				</div>
+				<footer></footer>
+			</div>
+		</div> <!-- .cd-cart -->
+	</div> <!-- cd-cart-container --> 
+<!-- /Cart section -->
 
-    <div id="all">
+<div id="all">
 
 
 <!-- *** INTRO IMAGE ***
-_________________________________________________________ -->
-        <div id="intro" class="clearfix">
-            <div class="item-loc">
-                <div class="container">
-                    <div class="row">
-                        <div class="carousel-caption">
-                            <div data-animate="fadeInDown" class="logo">
-                               <!-- <img src="img/logo-big.png" alt="logo" width="30"> -->
-                            </div>
-                            <h1 data-animate="fadeInDown">EXPLORE GODS OWN COUNTRY</h1>
-                            <h2 data-animate="slideInUp">Guide to plan your trip on Kerala</h2>
-<!--              <a href="#0" class="cd-add-to-cart" data-price="25.99">Add To Cart</a> -->
- 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+	_________________________________________________________ -->
+	<div id="intro" class="clearfix">
+		<div class="item item-loc">
+			<div class="container">
+				<div class="row">
+					<div class="carousel-caption">
+						<div data-animate="fadeInDown" class="logo">
+						   <!-- <img src="img/logo-big.png" alt="logo" width="30"> -->
+					   </div>
+					   <h1 data-animate="fadeInDown">EXPLORE GODS OWN COUNTRY</h1>
+					   <h2 data-animate="slideInUp">Choose your top destinations in Kerala</h2>
+					   <!--              <a href="#0" class="cd-add-to-cart" data-price="25.99">Add To Cart</a> -->
+
+				   </div>
+			   </div>
+		   </div>
+	   </div>
+   </div>
 
 <!-- *** INTRO IMAGE END 
-_________________________________________________________ -->
-       
+	_________________________________________________________ -->
+
  <!-- *** TRIP PLAN ***
-_________________________________________________________ -->
-
-<div class="section" id="references">
-        <div class="container">
-            <div class="col-sm-12">
-
-                <div class="mb20">
-                    <h2 class="title" data-animate="fadeInUp">plan your trip</h2>
-                    </div>
-
-                    <ul id="filter" data-animate="fadeInUp">
-                        <li class="active"><a href="#" data-filter="all">All</a>
-                        </li>
-                        <li><a href="#" data-filter="munnar">Munnar</a>
-                        </li>
-                        <li><a href="#" data-filter="alappuzha">Alappuzha</a>
-                        </li>
-                        <li><a href="#" data-filter="wayanad">Wayanad</a>
-                        </li>
-                        <li><a href="#" data-filter="kochi">Kochi</a>
-                        </li>
-                    </ul>
-
-                    <div id="detail">
-
-                        <span class="close">&times;</span> 
-
-                        <div id="detail-slider"></div>
-
-                        <div class="text-center">
-                            <h1 id="detail-title">&nbsp;</h1>
-                        </div>
-
-                        <div id="detail-content"></div>
-                        <div class="buttons btn btn-primary tour-cart-button">
-                            <i class="fa fa-plus-circle"></i> Add To Tour
-                        </div>
-
-                    </div>
-                    <!-- Reference detail -->
-
-                    <div id="references-masonry" data-animate="fadeInUp">
-
-                        <div class="reference-item" data-category="alappuzha">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Alappuzha/alappy5.jpg" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Alapuzha</h3> 
-                                        <p>Veneice in the west</p>
-                                    </div>
-                                </a>
-
-                                <div class="sr-only reference-description" data-images="img/Categories/Boating/Alapuzha/alappy2.jpg,img/Categories/Boating/Alapuzha/alappy3.jpg,img/Categories/Boating/Alapuzha/alappy5.jpg">
-
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary" data-toggle="modal" data-target="#myModal" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reference-item" data-category="munnar">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Munnar/munnar.jpg" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Munnar</h3> 
-                                        <p>Beauty of the Nature</p>
-                                    </div>
-                                </a>
-
-                                <div class="sr-only reference-description" data-images="img/Locations/Munnar/munnar1.jpg,img/Locations/Munnar/munnar2.jpg,img/Locations/Munnar/munnar3.jpg">
-
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="kochi">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Kochi/kochi1.jpg" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Kochi</h3> 
-                                        <p>Queen of Arabian Sea</p>
-                                    </div>
-                                </a>
+ _________________________________________________________ -->
+
+ <div class="section" id="references">
+	<div class="container">
+		<div class="col-sm-12">
+
+			<div class="mb20">
+				<h2 class="title" data-animate="fadeInUp">plan your trip</h2>
+			</div>
+
+			<ul id="filter" data-animate="fadeInUp">
+				<li class="active"><a href="#" data-filter="all">All</a></li>
+				<li><a href="#" data-filter="Kochi">Kochi</a></li>
+				<li><a href="#" data-filter="Alappuzha">Alappuzha</a></li>
+				<li><a href="#" data-filter="Wayanad">Wayanad</a></li>                    
+				<li><a href="#" data-filter="Trivandrum">Trivandrum</a></li>
+				<li><a href="#" data-filter="Kollam">Kollam</a></li>
+				<li><a href="#" data-filter="Pathanmthitta">Pathanmthitta</a></li>
+				<li><a href="#" data-filter="Kottayam">Kottayam</a></li>
+				<li><a href="#" data-filter="Idukki">Idukki</a></li>
+				<li><a href="#" data-filter="Thrissur">Thrissur</a></li>
+				<li><a href="#" data-filter="Palakkadu">Palakkadu</a></li>
+				<li><a href="#" data-filter="Malappuram">Malappuram</a></li>
+				<li><a href="#" data-filter="Kozhikodu">Kozhikodu</a></li>
+				<li><a href="#" data-filter="Kannur">Kannur</a></li>
+				<li><a href="#" data-filter="Kasarkodu">Kasarkodu</a></li>
+			</ul>
+
+			<div id="detail">
+
+				<span class="close">&times;</span> 
+
+				<div id="detail-slider"></div>
+
+				<div class="text-center">
+					<h1 id="detail-title">&nbsp;</h1>
+				</div>
+
+				<div id="detail-content"></div>
+				<div class="buttons btn btn-primary tour-cart-button">
+					<i class="fa fa-plus-circle"></i> Add To Tour
+				</div>
+
+			</div>
+			<!-- Reference detail -->
+
+			<div id="references-masonry" data-animate="fadeInUp">
+				<div class="reference-item" data-category="Kochi">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kochi/kochi1.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Kochi</h3> 
+								<p>Queen of Arabian Sea</p>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Kochi/kochi1.jpg,img/Locations/Kochi/kochi2.jpg,img/Locations/Kochi/kochi3.jpg">
+							<p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
+								explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+							<p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
+									talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+							<p class="buttons">
+								<a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kochi">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Fort Kochi Beach/Fort Kochi Beach.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Fort Kochi Beach</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Fort Kochi Beach/Fort Kochi Beach.jpg,img/Locations/Fort Kochi Beach/Fort Kochi Beach1.jpg,img/Locations/Fort Kochi Beach/Fort Kochi Beach2.jpg">
+
+							<p>Fort Kochi is a region in the city of Kochi in the state of Kerala, India. This is part of a handful of water-bound regions toward the south-west of the mainland Kochi, and collectively known as Old Kochi or West Kochi. Adjacent to this is Mattancherry. In 1967, these three municipalities, along with a few adjoining areas, were amalgamated to form the Corporation of Cochin. inbasekharan IAS is the subcollector and SDM of Fort Kochi.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Alappuzha">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kuttanadu/Kuttanadu.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Kuttanadu</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Kuttanadu/Kuttanadu.jpg,img/Locations/Kuttanadu/Kuttanadu1.jpg,img/Locations/Kuttanadu/Kuttanadu2.jpg">
+							<p>Kuttanad is a region covering the Alappuzha and Kottayam Districts, in the state of Kerala, India, well known for its vast paddy fields and geographical peculiarities. The region has the lowest altitude in India, and is one of the few places in the world where farming is carried around 1.2 to 3.0 metres (4 to 10 ft) below sea level. Kuttanadu is historically important in the ancient history of South India and is the major rice producer in the state. Farmers of Kuttinad are famous for Biosaline Farming. FAO has declared the Kuttanad Farming System as a Globally Important Agricultural Heritage Systems (GIAHS). Four of Kerala's major rivers, the Pamba, Meenachil, Achankovil and Manimala flow into the region. It is well known for it boat race in the Punnamada Backwaters. Also known in Malayalam as:(Vallamkalli).</p>
+						</div>
+					</div>
+				</div>     
+				<div class="reference-item" data-category="Wayanad">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/kurava Island/kurava Island.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">kurava Island</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/kurava Island/kurava Island.jpg,img/Locations/kurava Island/kurava Island1.jpg,img/Locations/kurava Island/kurava Island2.jpg">
+							<p>Located about 14 km east of Mananthavady in the northern district of Wayanad, Kuruvadweep is a group of islets forming 950 acres of evergreen forest. These islets are located in one of the tributaries of the River Kabani, which is close to the border with the State of Karnataka.
+								There are three prominent islets among the group, where one would come across a variety of vegetation, some rare orchids and wild flowers. One of these main islands contain two small fresh water lakes These islets are also haven for migratory birds, whose activities break the otherwise silent environs of these beautiful islets. The avian life here includes hornbills, parrots and a host of butterfly species.
+							</p>
+						</div>
+					</div>
+				</div> 
+				<div class="reference-item" data-category="Trivandrum">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Ponmudi/Ponmudi.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Ponmudi</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Ponmudi/Ponmudi.jpg,img/Locations/Ponmudi/Ponmudi1.jpg,img/Locations/Ponmudi/Ponmudi2.jpg">
+							<p>Ponmudi is connected to Trivandrum by a narrow winding road offering scenic views on the way to Ponmudi. The climate is pleasant year-round. Ponmudi serves as a base for trekking and hiking. There are also tea gardens in the area. There are 22 hairpin turns along this short route which makes the travel a definitely thrilling experience.
+								Other attractions near Ponmudi include Golden Valley and a number of rivulets and rapids, some even across the road. The lush forest area has tropical vegetation. A variety of wildlife inhabit the hills. The Golden Valley offers vistas of the hills and access to the Kallar River. Flowing though a wilderness area, it has rounded pebbles, cool water, fish, and lush green trees
+							</p>
+						</div>
+					</div>
+				</div>        
+				<div class="reference-item" data-category="Kollam">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Thenmala/Thenmala.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Thenmala</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Thenmala/Thenmala.jpg,img/Locations/Thenmala/Thenmala1.jpg,img/Locations/Thenmala/Thenmala2.jpg">
+							<p>Thenmala is the first planned eco-tourism destination in India. The Thenmala Dam is a popular ecotourism destination in Kerala. The Dam, which impounds the largest reservoir in the state which was built under the Kallada Irrigation and Tree Crop development project. The construction of the Parappar Dam across the confluence of the Chenduruney, Kazhuthurutty and Kulathupuzha rivers has resulted in the creation of a beautiful artificial lake of about 26 Sq. Km. which spreads along the middle of the Chenduruny Wildlife sanctuary. It is the second largest irrigation project in Kerala and its waters are now used for power generation</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Pathanmthitta">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Gavi/Gavi.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Gavi</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Gavi/Gavi.jpg,img/Locations/Gavi/Gavi1.jpg,img/Locations/Gavi/Gavi2.jpg">
+							<p>Gavi is a village in Pathanamthitta district, Kerala, India. It is located 28 km southwest of Vandiperiyar, a town in Idukki on N.H 220, the highway connecting Kollam and Madurai. Botanists have said that "gopher trees" can be seen in Gavi, Kerala. Gavi's forest area, there are two gopher trees and they are believed to be the only two gopher trees in India. The tree, which is identified as gopher, is known as nirampalli. Gopher wood or gopherwood is a term used once in the Bible. There is no consensus about what modern species is meant by "gopher wood".</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kottayam">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Elaveezham Poonchira/Elaveezham Poonchira.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Elaveezham Poonchira</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Elaveezham Poonchira/Elaveezham Poonchira.jpg,img/Locations/Elaveezham Poonchira/Elaveezham Poonchira1.jpg,img/Locations/Elaveezham Poonchira/Elaveezham Poonchira2.jpg">
+							<p>The heights of Elaveezha poonchira (also Ilaveezhapoonchira) hold the least explored terrains. Panoramic view from the top is so outstanding, that one thing is for sure. The future of tourism here is as bright as the sun kissed valleys where light sparkles on everything it touches.</p>
+							<p>They are usually hired from Kanjar, a small town 7 kms away.
+								As the local driver takes the vehicle up to the destination altitude of 3200 ft, the jeep ride gets more and more scenic while being increasingly scary.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Idukki">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Munnar/Munnar.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Munnar</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Munnar/Munnar.jpg,img/Locations/Munnar/Munnar1.jpg,img/Locations/Munnar/Munnar2.jpg">
+							<p>Munnar rises as three mountain streams merge  - Mudrapuzha, Nallathanni and Kundala. 1,600 m above sea level, this hill station was once the summer resort of the erstwhile British Government in South India. Sprawling tea plantations, picturesque towns, winding lanes and holiday facilities make this a popular resort town. Among the exotic flora found in the forests and grasslands here is the Neelakurinji. This flower which bathes the hills in blue once in every twelve years, will bloom next in 2018. Munnar also has the highest peak in South India, Anamudi, which towers over 2,695 m. Anamudi is an ideal spot for trekking.</p>
+						</div>
+					</div>
+				</div>   
+				<div class="reference-item" data-category="Thrissur">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Athirappally Waterfall/Athirappally Waterfall.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Athirappally Waterfall</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Athirappally Waterfall/Athirappally Waterfall.jpg,img/Locations/Athirappally Waterfall/Athirappally Waterfall1.jpg,img/Locations/Athirappally Waterfall/Athirappally Waterfall2.jpg">
+							<p>The two picturesque and majestic waterfalls, Athirapally and Vazhachal are located just five km apart, on the edge of the Sholayar forest ranges. The Athirapally falls join the Chalakudy river after plummeting down 80 ft. The cool spray that covers a large area near the falls makes Athirapally a scenic location. The picturesque Vazhachal waterfall is close to dense green forests and is a part of the Chalakudy river.</p>
+						</div>
+					</div>
+				</div>   
+				<div class="reference-item" data-category="Palakkadu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Silent Valley/Silent Valley.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Silent Valley</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Silent Valley/Silent Valley.jpg,img/Locations/Silent Valley/Silent Valley1.jpg,img/Locations/Silent Valley/Silent Valley2.jpg">
+							<p>The Silent Valley National Park with an area of 237. 52 sq km is located in the Northeastern corner of Palakkad district. It rises abruptly to the Nilgiri Plateau in the North and overlooks the plains of Mannarkkad in the South. Extremely fragile, a unique preserve of tropical evergreen rain forests which is a veritable nursery of flora and fauna, some of which are found nowhere else in the world.</p>
+							<p>The core of the Nilgiri Biosphere Reserve is the Silent Valley National Park. Despite its name, the Silent Valley (the clamour of Cicadas is conspicuously absent here) is a rich storehouse of biodiversity. It is a true Garden of Eden for students of life sciences, professional scientists and field biologists.</p>
+						</div>
+					</div>
+				</div>  
+				<div class="reference-item" data-category="Malappuram">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Nilampur/Nilampur.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Nilampur</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Nilampur/Nilampur.jpg,img/Locations/Nilampur/Nilampur1.jpg,img/Locations/Nilampur/Nilampur2.jpg">
+							<p>Nilambur is renowned for the oldest teak plantation in the world, the Conolly's Plot, just 2 km from town. The place is also noted for its tribal settlements, the world's first Teak Museum, vast rain forests, waterfalls and ancient kovilakoms - residences of maharajas.
+
+							The teak plantation is named after H.V. Conolly, the Malabar District Collector during the British rule, who was instrumental in planting teak in the entire Nilambur area. Chathu Menon, a forest officer under Conolly, organised the hectic task of planting the saplings. Chathu Menon was laid to rest in the teak garden in Conolly's Plot.
+							</p>
+						</div>
+					</div>
+				</div> 
+				<div class="reference-item" data-category="Kozhikodu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kozhikodu Beach/Kozhikodu Beach.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Kozhikodu Beach</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Kozhikodu Beach/Kozhikodu Beach.jpg,img/Locations/Kozhikodu Beach/Kozhikodu Beach1.jpg,img/Locations/Kozhikodu Beach/Kozhikodu Beach2.jpg">
+							<p>Kozhikode Beach is a favourite haunt of sunset viewers, it is also a good place for trying out seafood delicacies like kallumekaya (mussels), available at the numerous stalls lining the promenade. At dawn, a walk along Dolphin’s Point will reward you with a sight of playful dolphins. Adding to its natural beauty is the old world charm retained by the old lighthouse and the two crumbling piers that run into the sea, each more than a hundred years old. Entertainment facilities such as the Lions Park for children and the marine water aquarium are added attractions. The aquarium is open on all days from 0800 to 2000 hrs.</p>
+						</div>
+					</div>
+				</div> 
+				<div class="reference-item" data-category="Kannur">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Ezhimala/Ezhimala.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Ezhimala</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Ezhimala/Ezhimala.jpg,img/Locations/Ezhimala/Ezhimala1.jpg,img/Locations/Ezhimala/Ezhimala2.jpg">
+							<p>Ezhimala is a hillock, which is 286 m high, rises above the beautiful beach here. Carved stone pillars and an ancient burial chamber can be seen at the foot of the hills. The hills are well known for its rare medicinal herbs.Naval Academy Ezhimala (NAVAC), one of the largest of its kind in Asia, is located here. Permission is required for entry.</p>
+						</div>
+					</div>
+				</div> 
+				<div class="reference-item" data-category="Kasarkodu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Bekkal Fort/Bekkal Fort.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Bekkal Fort</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Bekkal Fort/Bekkal Fort.jpg,img/Locations/Bekkal Fort/Bekkal Fort1.jpg,img/Locations/Bekkal Fort/Bekkal Fort2.jpg">
+							<p>Kasaragod, the Northern most district of Kerala is renowned as the land of gods, forts, rivers, hills and beautiful beaches. The imposing fort at Bekal is one of the largest and best-preserved forts in Kerala. The beautiful expanse of the shallow beach near the Bekal fort, known as Bekal Fort Beach has been developed as an exotic beach location by the Bekal Resorts Development Corporation (BRDC).</p>
+						</div>
+					</div>
+				</div>  
+				<div class="reference-item" data-category="Kochi">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Marine Drive/Marine Drive.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Marine Drive</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Marine Drive/Marine Drive.jpg,img/Locations/Marine Drive/Marine Drive1.jpg,img/Locations/Marine Drive/Marine Drive2.jpg">
+							<p>Marine Drive is a picturesque promenade in Kochi, Kerala, India.[1]It is built facing the backwaters, and is a popular hangout for the local populace. Ironic to its name, no vehicles are allowed on the walkway. Marine Drive is also an economically thriving part of the city of Kochi.[2]With several shopping malls it is as an important centre of shopping activity in Kochi. Major fast food joints, including Marrybrown, DiMark, Coffee Bar are present along the walkway. The view of the setting and rising sun over the sea mouth, and the gentle breeze from the Vembanad Lake has made Marine Drive an important tourist destination in Kochi. Hundreds of people (both natives, and tourists) throng the walkway during the evenings. The walkway starts from the High Court Junction and continues until the Rajendra Maidan. There are also several boat jetties along the walkway</p>
+						</div>
+					</div>
+				</div>  
+				<div class="reference-item" data-category="Alappuzha">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Alleppey Beach/Alleppey Beach.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Alleppey Beach</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Alleppey Beach/Alleppey Beach.jpg,img/Locations/Alleppey Beach/Alleppey Beach1.jpg,img/Locations/Alleppey Beach/Alleppey Beach2.jpg">
+							<p>Alappuzha beach is one of the major tourist spot in Alappuzha town. Alappuzha lighthouse situated near to the beach.Beach is accessible through various town roads and an elevated highway will passing by the beach as part of Alappuzha bypass in order to preserve the beauty of the area. Camel safaris was another attraction in beach which introduced a couple of years ago but it got banned by authorities.</p>
+						</div>
+					</div>
+				</div> 
+				<div class="reference-item" data-category="Wayanad">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Edakkal Cave/Edakkal Cave.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Edakkal Cave</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Edakkal Cave/Edakkal Cave.jpg,img/Locations/Edakkal Cave/Edakkal Cave1.jpg,img/Locations/Edakkal Cave/Edakkal Cave2.jpg">
+							<p>What kind of people were our ancestors? What kind of lives did they lead? Often, the paths leading to the answers to these questions are as fascinating as the answers themselves. If you would like to walk a little way along one such wonderful path of discovery, one good place to visit would be the Edakkal caves in the Ambukuthi Hills in North Kerala, considered to be one of the earliest centres of human habitation. Inside the cave you will find ancient stone scripts, pictorial wall inscriptions of human and animal figures with peculiar headdresses, the swastik form, symbols and cave drawings of human figures, wheels, bows, knives, trees and so on.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Trivandrum">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Neyyar Dam/Neyyar Dam.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Neyyar Dam</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Neyyar Dam/Neyyar Dam.jpg,img/Locations/Neyyar Dam/Neyyar Dam1.jpg,img/Locations/Neyyar Dam/Neyyar Dam2.jpg">
+							<p>Neyyar dam is situated at Kallikkad Panchayath of Kattakkada Taluk of Trivandrum district. The peak Agasthya kooodam is very near to Neyyar dam. The dam was built in the land given by an agriculturist known as Karuvachiyil Krishan Panicker, Father of Janaki Thankamma, Maruthummoottil family, and his other family members for irrigation purposes. One canal of Neyyar flows to western districts of Tamil Nadu. The main river Neyyar flows through Kallikkadu, Ottasekharamangalam, Aryancode, Kezharoor, Perumkadavila, Marayamuttom, Neyyattinkara and Poovar and ends at the Arabian Sea</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kollam">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Palaruvi Waterfall/Palaruvi Waterfall.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Palaruvi Waterfall</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Palaruvi Waterfall/Palaruvi Waterfall.jpg,img/Locations/Palaruvi Waterfall/Palaruvi Waterfall1.jpg,img/Locations/Palaruvi Waterfall/Palaruvi Waterfall2.jpg">
+							<p>Palaruvi - literally, stream of milk - is one of Kerala's most picturesque waterfalls, cascading down a height of 300 feet. It is a favourite picnic spot for visitors from all over south India. The journey to Palaruvi through the dense tropical forest is a spellbinding experience.
+								Palaruvi which means stream of milk makes its way down the rocks, from a height of 300 feet. It is a beautiful picnic spot. The PWD Inspection Bungalow and the KTDC Motel here offer comfortable accommodation.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Pathanmthitta">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Panthalam Palace/Panthalam Palace.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Panthalam Palace</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Panthalam Palace/Panthalam Palace.jpg,img/Locations/Panthalam Palace/Panthalam Palace1.jpg,img/Locations/Panthalam Palace/Panthalam Palace2.jpg">
+							<p>Pandalam palace is the permanent home for the royal family of Pandalam.[1] It's situated on the banks of river Achankovil. Although most of the original buildings have vanished by flood and fires, a few still remain which could be witnessed in the area among the newly constructed buildings.
+								There are two palace complexes at present. The first one is Valiyakoikkal Temple and the other one is Kaipuzha Temple. Valiya koikkal temple is situated on the left bank of Achankovil river and the Kaipuzha temple is situated about one kilometer away from the first on the right bank.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kottayam">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Vempanatu Lake/Vempanatu Lake.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Vempanatu Lake</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Vempanatu Lake/Vempanatu Lake.jpg,img/Locations/Vempanatu Lake/Vempanatu Lake1.jpg,img/Locations/Vempanatu Lake/Vempanatu Lake2.jpg">
+							<p>Kottayam is a vast network of canals which empty into the great expanse of water called the Vembanad Lake. The lake, an enchanting picnic spot and a fast developing backwater tourism destination, provides boating, fishing and sightseeing experiences that are truly exhilarating. The Kumarakom Tourist Village offers houseboat cruises and holiday packages. The serene lake comes alive during Onam with a spectacular water regatta - the snake boat races. It is indeed amazing to watch oarsmen, at least a hundred in one boat, slice their way through the waters to the fast rhythm of their own full throated singing.</p>
+						</div>
+					</div>
+				</div> 
+				<div class="reference-item" data-category="Idukki">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Eravikulam/Eravikulam.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Eravikulam</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Eravikulam/Eravikulam.jpg,img/Locations/Eravikulam/Eravikulam1.jpg,img/Locations/Eravikulam/Eravikulam2.jpg">
+							<p>It is an ideal place for seeing the biodiversity of high elevation shola-grassland ecosystem. Visitors are taken to Rajamalai in forest dept vehicles and given an opportunity to see all this. Private vehicles are not allowed here. The National Park is usually closed at the time of calving of Nilgiri Tahr which is usually during the early months of every year.
+							A sanctuary for the endangered mountain goat of South India, the Nilgiri Tahr (Hemitragus hylocrious), the Eravikulam National Park stands out for the stark beauty of its rolling grasslands and sholas, spread over 97 sq km in the Kannan devan hills.
+							Anamudi, the highest peak (2695 m) south of Himalayas, stands majestically in the core area of the national park. The slopes of the hills abound in many kinds of rare flora which include rare terrestrial and epiphytic orchids, and beautiful wild balsams. Important fauna here are the Nilgiri Tahr, Nilgiri Langur, leopard, tiger, Indian bison, etc.
+							</p>
+						</div>
+					</div>
+				</div>     
+				<div class="reference-item" data-category="Thrissur">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Peechy/Peechy.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Peechy</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Peechy/Peechy.jpg,img/Locations/Peechy/Peechy1.jpg,img/Locations/Peechy/Peechy2.jpg">
+							<p>The Peechi-Vazhani Wildlife Sanctuary in Thrissur district is a good spot for nature lovers.
+								Established in 1958, this 125 sq km sanctuary is about 20 km east of Thrissur, in the catchment area of the Peechi and Vazhani dams. The sanctuary is part of the Palapilli-Nelliampathy forests and forms the Northern boundary of the Chimmini Sanctuary.
+								Having an abundance of enchanting flora and fauna and a lake where you can go boating, this place is a treat for the nature lover. There are more than 50 different kinds of orchids, innumerable rare medicinal plants, teak, rosewood, and so on. The faunal diversity includes over 25 species of mammals including carnivores like the leopard, tiger, jungle cat and herbivores like the Sambar deer, barking deer, spotted deer, Indian bison and Asian elephant. More than 100 species of birds and several species of snakes and lizards are also found here.
+							</p>
+						</div>
+					</div>
+				</div>                       
+				<div class="reference-item" data-category="Palakkadu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Nelliyampathy/Nelliyampathy.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Nelliyampathy</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Nelliyampathy/Nelliyampathy.jpg,img/Locations/Nelliyampathy/Nelliyampathy1.jpg,img/Locations/Nelliyampathy/Nelliyampathy2.jpg">
+							<p>From the town of Nenmara in Palakkad district, the cloud-caressed peaks of the majestic Nelliyampathy Hill ranges are a sight to behold. The height of the hills ranges from approximately 467 m to 1572 m and it has an extremely calming effect on all who view it. To reach Nelliyampathy, one has to take the road starting from Nenmara that proceeds to the Pothundy Dam. There are about 10 hairpin bends that have to be negotiated on the way to Nelliyampathy.</p>
+						</div>
+					</div>
+				</div>                                                       
+				<div class="reference-item" data-category="Kozhikodu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Beppur Fort/Beppur Fort.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Beppur Fort</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Beppur Fort/Beppur Fort.jpg,img/Locations/Beppur Fort/Beppur Fort.jpg1,img/Locations/Beppur Fort/Beppur Fort2.jpg">
+							<p>Beypore is located in Kozhikode at the mouth of the Chaliyar River. Historically, it has a special place as being one of the prominent ports and fishing harbours, and was also an important trade and maritime centre during the days of the early Arab and Chinese travellers and later the Europeans. Soon after gaining prominence as a port and trade centre, Beypore slowly began to flourish as a centre for shipbuilding, since ships were in great demand merchants from Western Asia. The shipbuilding yard at Beypore port is famous for its traditional construction of the Uru or the Arabian trading vessel. This tradition of shipbuilding is nearly 1,500 years old, and the craftsmanship of the workers here is exceptional.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kannur">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Ettikkulam Beach/Ettikkulam Beach.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Ettikkulam Beach</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Ettikkulam Beach/Ettikkulam Beach.jpg,img/Locations/Ettikkulam Beach/Ettikkulam Beach.jpg,img/Locations/Ettikkulam Beach/Ettikkulam Beach.jpg">
+							<p>The Ettikulam Beach lies at the northern boundary of Kannur. Rare medical herbs (Ramayana) with mythological significance grow on Ezhimala, the strange seven-peaked range. Around 50 kms from here, is the Mount Deli Lighthouse, an old tower of great antiquity. It's maintained by the Navy and is a restricted area. The beach sand is of a different texture and the sea is bluer that in other areas. At the Ettikulam bay one could enjoy watching dolphins. Ezhimala Beach is situated at the top of a clump of hills at an altitude of 286m and it is 55 kilometers from Kannur. An ancient cave and a burial chamber are also present at the foot of the hill and the hills are known rewritten for a lot of medicinal herbs. An ancient mosque also resides on a nearby hill. This place has witnessed a lot of historical events in 11th century of North Kerala and it is also believed that Buddha has also visited this place.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kasarkodu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Veeramala/Veeramala.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Veeramala</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Veeramala/Veeramala.jpg,img/Locations/Veeramala/Veeramala.jpg1,img/Locations/Veeramala/Veeramala2.jpg">
+							<p>A magnificent hill (or small mountain) in Cheruvathur Panchayat, the Veeramala Hill is an ideal tourist spot from where the natural beauty of the Kariangode River and its surroundings can be enjoyed. There is a hill top with the ruins of a Dutch fort built in the 18th century.  </p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kochi">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Bolgatty Palace/Bolgatty Palace.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Bolgatty Palace</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Bolgatty Palace/Bolgatty Palace.jpg,img/Locations/Bolgatty Palace/Bolgatty Palace1.jpg,img/Locations/Bolgatty Palace/Bolgatty Palace2.jpg">
+							<p>Bolgatty Palace is a former palace built by the Dutch in India, located on the island popularly known as Bolghatty Island in Kochi, Kerala. One of the oldest existing Dutch palaces outside Holland, this quaint mansion, built in 1744 by Dutch traders, was later extended and gardens were landscaped around it. The building was then the Governor's palace for the commander of Dutch Malabar, and later in 1909 was leased to the British. It served as the home of the British Governors, being the seat of the British Resident of Cochin during the British Raj.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Alappuzha">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Pathiramanal/Pathiramanal.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Pathiramanal</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Pathiramanal/Pathiramanal.jpg,img/Locations/Pathiramanal/Pathiramanal1.jpg,img/Locations/Pathiramanal/Pathiramanal2.jpg">
+							<p>Pathiramanal is a small island in Muhamma panchayat of Alappuzha district and border of Kottayam district also . The name Pathiramanal means 'sands of night'. The scenic beauty of both sides of the lake as well as that of the island is mind blowing. It is home to many rare varieties of migratory birds from different parts of the world.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Wayanad">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Thuzharagiri Waterfalls/Thuzharagiri Waterfalls.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Thuzharagiri Waterfalls</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Thuzharagiri Waterfalls/Thuzharagiri Waterfalls.jpg,img/Locations/Thuzharagiri Waterfalls/Thuzharagiri Waterfalls1.jpg,img/Locations/Thuzharagiri Waterfalls/Thuzharagiri Waterfalls2.jpg">
+							<p>As the name suggests, land and water have struck an extraordinary kinship at Thusharagiri (mist capped peaks). The plantation destination that abounds in rubber, arecanut, pepper, ginger and spices, is also a trekkers delight. Lying 50 km from Kozhikode, the Thusharagiri Waterfalls comprises Erattumukku, Mazhavil Chattom, and Thumbithullum Para which can be reached through trekking.Trekkers start early morning from the second waterfall on the hills and climb up through the pristine dense evergreen forests teeming with exotic birds and animals to reach Vythiri in Wayanad district by evening.</p>
+						</div>
+					</div>
+				</div>    
+				<div class="reference-item" data-category="Trivandrum">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kovalam/Kovalam.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Kovalam</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Kovalam/Kovalam.jpg,img/Locations/Kovalam/Kovalam1.jpg,img/Locations/Kovalam/Kovalam2.jpg">
+							<p>Kovalam means a grove of coconut trees and true to its name the village offers an endless sight of coconut trees.Kovalam first received attention when the Regent Maharani Sethu Lakshmi Bayi of Travancore constructed her beach resort, Halcyon Castle, here towards the end of the 1920s. Thereafter the place was brought to the public eye by her nephew the Maharaja of Travancore. The European guests of the then Travancore kingdom discovered the potentiality of Kovalam beach as a tourist destination in the 1930s. However, Kovalam shot into limelight in the early seventies with arrivals of the masses of hippies on their way to Ceylon in the Hippie Trail. This exodus started the transformation of a casual fishing village of Kerala into one of the most important tourist destinations in all India</p>
+						</div>
+					</div>
+				</div>           
+				<div class="reference-item" data-category="Kollam">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Ashtamudi Lake/Ashtamudi Lake.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Ashtamudi Lake</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Ashtamudi Lake/Ashtamudi Lake.jpg,img/Locations/Ashtamudi Lake/Ashtamudi Lake1.jpg,img/Locations/Ashtamudi Lake/Ashtamudi Lake2.jpg">
+							<p>Ashtamudi Lake (Ashtamudi Kayal), in the Kollam District of the Indian state of Kerala, is the most visited backwater and lake in the state. It possesses a unique wetland ecosystem and a large palm-shaped (also described as octopus-shaped) water body, second only in size to the Vembanad estuary ecosystem of the state. Ashtamudi means 'eight coned' (Ashta : 'eight'; mudi : 'coned') in the local Malayalam language. The name is indicative of the lake's topography with its multiple branches. The lake is also called the gateway to the backwaters of Kerala and is well known for its houseboat and backwater resorts. Ashtamudi Wetland was included in the list of wetlands of international importance, as defined by the Ramsar Convention for the conservation and sustainable utilization of wetlands.</p>
+						</div>
+					</div>
+				</div>  
+				<div class="reference-item" data-category="Pathanmthitta">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Valppara/Valppara.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Valppara</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Valppara/Valppara.jpg,img/Locations/Valppara/Valppara1.jpg,img/Locations/Valppara/Valppara2.jpg">
+							<p>Valparai is a Taluk and hill station in the Coimbatore district of Tamil Nadu, India. It is located 3,500 feet (1,100 m) above sea level on the Anaimalai Hills range of the Western Ghats, at a distance of 100 kilometres (62 mi) from Coimbatore and 65 kilometres (40 mi) from Pollachi. There are 40 hairpin bends on the way up to Valparai from Azhiyar. While major portions of the land are owned by private tea companies, large forest areas continue to be out of bounds. As of 2011, the town had a population of 70,859.</p>
+						</div>
+					</div>
+				</div> 
+				<div class="reference-item" data-category="Kottayam">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kumarakom/Kumarakom.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Kumarakom</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Kumarakom/Kumarakom.jpg,img/Locations/Kumarakom/Kumarakom1.jpg,img/Locations/Kumarakom/Kumarakom2.jpg">
+							<p>Kumarakom is a popular tourism destination located near the city of Kottayam (16 kilometres (10 mi)), in Kerala, India, famous for its backwater tourism. It is set in the backdrop of the Vembanad Lake, the largest lake in the state of Kerala.Kumarakom has a moderate climate throughout the year. It is a balanced tropical climate, which has two monsoons south west and north east. The average rainfall is 1100 mm.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Idukki">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Chinnar/Chinnar.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Chinnar</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Chinnar/Chinnar.jpg,img/Locations/Chinnar/Chinnar1.jpg,img/Locations/Chinnar/Chinnar2.jpg">
+							<p>A unique thorny scrub forest with xerophyte species, Chinnar is the habitat for the endangered Giant Grizzled Squirrel of India. Their total number here would be less than 200. Located in the rain shadow area of the Western Ghats, unlike other sanctuaries in Kerala, Chinnar gets only less than two months of rain every year. Rich in wildlife, the mixed deciduous forests here are ideal for trekking.
+							An extensive Sandalwood forest nearby is an added attraction at Chinnar. This is also an ideal place for watching herds of gaur and elephants amble past. Dry deciduous forests, high sholas and some grasslands add to the diversity of the sanctuary. As one travels from Karimuthi to Chinnar, elephants, spotted deer, sambar, hanuman langur and even peacocks can be spotted on either side of the road.
+							</p>
+						</div>
+					</div>
+				</div> 
+				<div class="reference-item" data-category="Thrissur">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Thrissur Zoo and Museum/Thrissur Zoo and Museum.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Thrissur Zoo and Museum</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Thrissur Zoo and Museum/Thrissur Zoo and Museum.jpg,img/Locations/Thrissur Zoo and Museum/Thrissur Zoo and Museum1.jpg,img/Locations/Thrissur Zoo and Museum/Thrissur Zoo and Museum2.jpg">
+							<p>Thrissur Zoo or State Museum and Zoo, Thrissur (formerly the Trichur Zoo) is a 13.5-acre (5.5 ha) zoo that opened in 1885 in the heart of Thrissur City, Kerala, India. It is one of the oldest zoos in the country, and is home to the wide variety of animals, reptiles, and birds. The zoo compound includes a natural history museum and an art museum that showcase the socio-cultural heritage of the region. The Thrissur Zoo is 2 kilometres (1.2 mi) from the Thrissur City center and is open from 10:00 AM till 5:15 PM, except Mondays. Still and video cameras are allowed in the park for a fee.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Palakkadu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Malampuzha Dam/Malampuzha Dam.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Malampuzha Dam</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Malampuzha Dam/Malampuzha Dam.jpg,img/Locations/Malampuzha Dam/Malampuzha Dam1.jpg,img/Locations/Malampuzha Dam/Malampuzha Dam2.jpg">
+							<p>Malampuzha, a little township on the foothills of the Western Ghats takes its name from the River Malampuzha. Nurtured by this tributary of Kerala's longest river, the Bharathapuzha, Malampuzha is a lush green town is a major tourist attraction for its trekking trails and the large irrigation dam.
+							Around the reservoir of the dam are beautiful gardens and amusement parks. Boating facilities are available on the lake. Other attractions in the Malampuzha garden are the beautiful rock garden, the fish-shaped aquarium, the snake park, the ropeway which takes you on an aerial tour of the park, and the gigantic Yakshi (an enchantress) sculptured by Kanai Kunhiraman, a renowned sculptor of Kerala.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Malappuram">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kozhippara Waterfalls/Kozhippara Waterfalls.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Kozhippara Waterfalls</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Kozhippara Waterfalls/Kozhippara Waterfalls.jpg,img/Locations/Kozhippara Waterfalls/Kozhippara Waterfalls1.jpg,img/Locations/Kozhippara Waterfalls/Kozhippara Waterfalls2.jpg">
+							<p>Set in the lush green surroundings of Kozhikode, the beautiful Kozhippara waterfalls is an ideal location for trekking and swimming in Kerala. It is one of the best waterfalls, which offer plenty of opportunites to adventure enthusiast, who like to explore this spectacular destination. This place is surrounded by dense forests and maticulous landscapes, ideal for trekking and rock climbing. A large number of tourists visit this exotic waterfall to enjoy the serene setting of the jungle and to feel relaxed in the midst of tranquil forest.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kozhikodu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kalipoika Boating/Kalipoika Boating.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Kalipoika Boating</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Kalipoika Boating/Kalipoika Boating.jpg,img/Locations/Kalipoika Boating/Kalipoika Boating1.jpg,img/Locations/Kalipoika Boating/Kalipoika Boating2.jpg">
+							<p>This serene destination will surely win your heart with its breathtaking beauty and spectacular surroundings, enclosed by coconut groves and lush green plantation. Tourists visit this spot to avail facilities like cruising, boating, pedal boating and more on the calm and serene water of Kalipoika, which is about 2 km away from Kozhikode City. Its exact location is at Arayidathupalam, a small village in the midst of Kozhikode, that offers a stunning view of the Western Ghats and attracts hundreds of visitors every day.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kannur">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Paithalmala/Paithalmala.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Paithalmala</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Paithalmala/Paithalmala.jpg,img/Locations/Paithalmala/Paithalmala1.jpg,img/Locations/Paithalmala/Paithalmala2.jpg">
+							<p>Vaithalmala Paithalmala  is a hill station in the Kannur district of Kerala in India. Located near Pottenplave village, at a height of 1372 m above sea level, this is the highest geographic peak in Kannur. It is located at 40 km from Taliparamba and 65 km from Kannur. Nestled in the Kerala Karnataka border near to Kodagu forests, it lies in the Western Ghats. It has become a favourite spot for the nature enthusiasts, photographers, trekkers and leisurely visitors.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kasarkodu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Hosdurg Fort/Hosdurg Fort.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Hosdurg Fort</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Hosdurg Fort/Hosdurg Fort.jpg,img/Locations/Hosdurg Fort/Hosdurg Fort1.jpg,img/Locations/Hosdurg Fort/Hosdurg Fort2.jpg">
+							<p>Hosdurg Fort near Kanhangad is renowned for its chain of forts built by Somashekara Nayak of Ikkeri Dynasty. Another popular landmark here is the Nithyanandashram, an internationally famed spiritual centre. The place is located 15 km south of Bekal in Kasaragod.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kochi">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Cherai Beach/Cherai Beach.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Cherai Beach</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Cherai Beach/Cherai Beach.jpg,img/Locations/Cherai Beach/Cherai Beach1.jpg,img/Locations/Cherai Beach/Cherai Beach2.jpg">
+							<p>Cherai Beach, a picturesque beach, located on the north-end of the Vypeen Island is ideal for swimming. Lined with luscious green coconut groves and paddy fields, this sandy beach is a unique combination of the sea and the backwaters, studded with seashells of various hues and shapes. Dolphines are occasionally seen here. Thick coconut groves and Chinese fishing nets on the waterfront are added attractions.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Alappuzha">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Thannirmukam/Thannirmukam.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Thannirmukam</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Thannirmukam/Thannirmukam.jpg,img/Locations/Thannirmukam/Thannirmukam1.jpg,img/Locations/Thannirmukam/Thannirmukam2.jpg">
+							<p>The Thanneermukkom Bund (Thannermukkom Salt Water Barrier) was constructed as a part of the Kuttanad Development Scheme to prevent tidal action and intrusion of salt water into the Kuttanad low-lands across Vembanad Lake between Thannermukkom on south and Vechur on north. Thanneermukkom Bund was constructed in 1974 and is functional since 1976. It is the largest mud regulator in India. This barrier essentially divides the lake into two parts - one with brackish water perennially and the other half with fresh water fed by the rivers draining into the lake.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Wayanad">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Soojippara Waterfall/Soojippara Waterfall.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Soojippara Waterfall</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Soojippara Waterfall/Soojippara Waterfall.jpg,img/Locations/Soojippara Waterfall/Soojippara Waterfall1.jpg,img/Locations/Soojippara Waterfall/Soojippara Waterfall2.jpg">
+							<p>Soochipara Falls also known as Sentinel Rock Waterfalls is a three-tiered waterfall in Vellarimala, Wayanad, surrounded by Deciduous, Evergreen and Montane forests. Locally referred to as Soochipara ("Soochi" meaning "Needle" and "Para" meaning "Rock"), the 15-20 minute drive from Meppadi to Sentinel Rock Waterfalls offers scenic views of some of the best tea estates in Wayanad. The Sentinel Rock Waterfalls is 200 metres (656 feet) and offers a cliff face that is ideal for rock climbing.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Trivandrum">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Vizhinjam/Vizhinjam.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Vizhinjam</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Vizhinjam/Vizhinjam.jpg,img/Locations/Vizhinjam/Vizhinjam1.jpg,img/Locations/Vizhinjam/Vizhinjam2.jpg">
+							<p>Vizhinjam is a natural port located close to international shipping routes in Thiruvananthapuram city in the Indian state of Kerala. Kovalam beach lies 3 kilometres (1.9 mi) from Vizhinjam while the area is known for its Ayurvedic treatment centers and internationally acclaimed beach resorts. As of 2001, the population was 18,566.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kollam">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Neendakara/Neendakara.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Neendakara</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Neendakara/Neendakara.jpg,img/Locations/Neendakara/Neendakara1.jpg,img/Locations/Neendakara/Neendakara2.jpg">
+							<p>Neendakara is a village in Karunagappally taluk, Kollam district 9 km north of Kollam city in Kerala, India. It is Kollam district's intermediate fishing port.When Portuguese traders settled in Kollam (then Quilon) in the early 16th century, their ships passed through the Neenadakara bar, now the site of Neendakara Bridge, part of National Highway 66, which connects the village to Sakthikulangara across Ashtamudi Lake.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Pathanmthitta">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Konni Elephant Park/Konni Elephant Park.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Konni Elephant Park</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Konni Elephant Park/Konni Elephant Park.jpg,img/Locations/Konni Elephant Park/Konni Elephant Park1.jpg,img/Locations/Konni Elephant Park/Konni Elephant Park2.jpg">
+							<p>Konni is a popular training centre for elephants in Kerala. Located in the district of Pathanamthitta, it is a major centre of tourist attraction in Kerala, and attracts visitors in large numbers throughout the year.Situated about 11 km from Pathanamthitta, the main attraction at the elephant training centre at Konni is the huge cages built of wood to house elephants. This massive wooden cage is locally known as Aanakoodu and can accommodate three to four elephants at a time.The chief task of the trainers here at Konni is to train baby elephants, which are brought to the training centre after getting separated from its herd, or found wounded and roaming lonely in the forest. Experienced trainers, who employ some of the time-tested methods to tame the baby elephants, follow systematic training methodologies. Some of the training programmes besides making the elephants to obey commands include, daily exercises in the morning, which also include a walk in the premises, followed by bath and feeding of a special diet.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Idukki">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Vagamon/Vagamon.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Vagamon</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Vagamon/Vagamon.jpg,img/Locations/Vagamon/Vagamon1.jpg,img/Locations/Vagamon/Vagamon2.jpg">
+							<p>Still untouched by commercialisation, the sleepy town with its scenic valleys, beautiful green meadows, enchanting pine forests, mists, fogs, tea estates, waterfalls with the overall greenery is really striking. The landscape is mostly hilly bald with green meadows. Vagamon is also home to a large variety of flowers and orchids. Cuddled up within three striking hills Thangal, Murugan and Kurisumala hills which are the representation of the chief religions in Kerala, i.e. Hindu, Muslim, and Christian which represent the cultural harmony. Vagamon has amenities for trekking, paragliding, mountaineering and rock climbing. However business interests are trying their best to exploit and sell and market Vagamon for tourists. How much benefit the local people are receiving from tourism boom is to be seen. The efforts made by the Kurishumala Ashram have helped the farmers of vagamon to improve their earnings by ensuring better price for milk and marketing opportunities.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Thrissur">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Guruvayoor Temple/Guruvayoor Temple.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Guruvayoor Temple</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Guruvayoor Temple/Guruvayoor Temple.jpg,img/Locations/Guruvayoor Temple/Guruvayoor Temple1.jpg,img/Locations/Guruvayoor Temple/Guruvayoor Temple2.jpg">
+							<p>Guruvayoor is one of the most sacred and important pilgrim centres of Kerala. Its main attraction is the Sree Krishna Temple, considered the Dwaraka of the South. This historic temple is shrouded in mystery. According to belief, the temple is the creation of Guru, the preceptor of the Gods, and Vayu, God of the winds. The eastern NADA is the main entrance to the shrine. In the Chuttambalam (outer enclosure) is the tall 33.5 m high gold plated Dwajasthambam (flag-post). There is also a 7 metre high Deepasthambam (pillar of lamps), whose thirteen circular receptacles provide a truly gorgeous spectacle when lit. The square Sreekovil is the sacred sanctum sanctorum of the temple, housing the main deity. Within the temple there are also the images of Ganapathy, Lord Ayyappa and Edathedathu Kavil Bhagavathy. Renowned for its healing powers, people make an astonishing range of offerings here to the Lord. One of the most popular offerings is the Thulabharam, where devotees are weighed against bananas, sugar, jaggery and coconuts equivalent to their weight. Only Hindus are allowed inside the temple.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Palakkadu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Palakkadu Fort/Palakkadu Fort.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Palakkadu Fort</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Palakkadu Fort/Palakkadu Fort.jpg,img/Locations/Palakkadu Fort/Palakkadu Fort1.jpg,img/Locations/Palakkadu Fort/Palakkadu Fort2.jpg">
+							<p>The Tipu's Fort, also known as Palakkad Fort, stands in the heart of Palakkad town. Palakkad is a small town on the lower edges of the Sahyadri ranges of the Western Ghats, with patches of dense forests and crisscrossed with rivers.One of the well preserved forts in south India, Tipu's Fort was constructed in 1766 AD and is today a protected monument under the Archaeological Survey of India. The sober majesty of the laterite walls of the fort reminds one of the old tales of valour and courage.The fort was built by Hyder Ali (1717 - 1782), the emperor of Mysore province (now part of Karnataka State), supposedly to facilitate communication between both sides of the Western Ghats, (Coimbatore and the West Coast). He had captured the Malabar and Kochi regions which come under the West Coast area. His son Tipu Sultan (1750 - 1799) a warrior as well as a linguist was known as the 'Tiger of Mysore'. Tipu waged a series of wars against the British colonial rule.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Malappuram">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Biyam Lake/Biyam Lake.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Biyam Lake</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Biyam Lake/Biyam Lake.jpg,img/Locations/Biyam Lake/Biyam Lake1.jpg,img/Locations/Biyam Lake/Biyam Lake2.jpg">
+							<p>Take a cruise on Biyyam Kayal at Ponanni Malappuram district, a fantastic backwater lined with full of greenery. Biyyam Kayal also has a range of water sports activities like speedboats and water scooters rides.Biyyam Lake (Kayal) is a beautiful waterway situated near by Ponnani in Malappuram District in Kerala. For tourism, there is a Boat race held in its extensive stretch of water during all festival especially Onam draws. There are large number of people from far and near are coming occasionally here in Biyyam Lake. Biyyam lake now rises to developed tourist place in Ponnani, Malappuram. The lake water sports facility set up by the District Tourism Promotion Council (DTPC). There are lots of of rest houses on the bank of the lake and it has all facilities attached.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kozhikodu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Craft Village/Craft Village.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Craft Village</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Craft Village/Craft Village.jpg,img/Locations/Craft Village/Craft Village1.jpg,img/Locations/Craft Village/Craft Village2.jpg">
+							<p>Sargaalaya, the Kerala Arts and Crafts village at Iringal in Kerala is an initiative of the Department of Tourism, Government of Kerala. It is an exclusive place where you can not only pick a product fashioned by the traditional artisans of Kerala but also learn one or two lessons in the subtleties of crafts-making. Conceptualized as a tourist destination, Sargaalaya was developed and implemented on the Responsible Tourism model.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kannur">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Payyambalam Beach/Payyambalam Beach.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Payyambalam Beach</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Payyambalam Beach/Payyambalam Beach.jpg,img/Locations/Payyambalam Beach/Payyambalam Beach1.jpg,img/Locations/Payyambalam Beach/Payyambalam Beach2.jpg">
+							<p>Quiet, secluded, this beautiful stretch of sand and surf is the best locale for a relaxed evening. The Payyambalam beach is a popular picnic spot of the local people and holds much potential for development into a tourist resort.The rest of the land - Kannur - is equally fascinating to explore. Being the cradle of ageless folk arts like Theyyam and folk music, Kannur has always remained a land of ageless charms.However, if you decide to hide away at this beach destination, your stay should be arranged in the town 2 km away. Comfortable accommodation is available.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kasarkodu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kottappuram/Kottappuram.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Kottappuram</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Kottappuram/Kottappuram.jpg,img/Locations/Kottappuram/Kottappuram1.jpg,img/Locations/Kottappuram/Kottappuram2.jpg">
+							<p>Kottappuram is known for attractions which draw large numbers of visitors, which include meandering rivers and tranquil beaches. The bridge across the river roughly marks its northern boundary. The rivers, Tejaswini and Nileswar, meet a short distance away before spilling jointly into the sea at Taikadappuram. The nearest beach is at Thaikandapuram. A small fishing is located close to the estuary.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kochi">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Aluva Palace/Aluva Palace.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Aluva Palace</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Aluva Palace/Aluva Palace.jpg,img/Locations/Aluva Palace/Aluva Palace1.jpg,img/Locations/Aluva Palace/Aluva Palace2.jpg">
+							<p>Alwaye Palace is located in Aluva, which is one of the major towns of greater Kochi city of Ernakulam district, Kerala. Alwaye is an important industrial town of Ernakulam as well as an important tourist spot in Kerala. Alwaye Palace (also known as Aluva Palace) is a glorious monument, which is a reminiscent of the splendor and heritage of the ancient past of Kerela. The palace is located on the banks of the charming Periyar River. The palace has seen a long past, which was full of events that changed the face of Kerala. The palace has seen numerous battles and successions, which formed an important part of the history of Kerala. Through a visit to this palace, you will be transported to the glorious historic times, the period when royalty hailed. The river which flows at close vicinity and expansive gardens enhance the beauty of the palace. The circular balconies of Aluva Palace give a spectacular view of the river.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Alappuzha">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Krishnapuram Palace/Krishnapuram Palace.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Krishnapuram Palace</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Krishnapuram Palace/Krishnapuram Palace.jpg,img/Locations/Krishnapuram Palace/Krishnapuram Palace1.jpg,img/Locations/Krishnapuram Palace/Krishnapuram Palace2.jpg">
+							<p>The Krishnapuram Palace is a palace and museum located in Kayamkulam near Alappuzha in Alappuzha district, Kerala in southwestern India. It was built in the 18th century by Anizham Thirunal Marthanda Varma (1729–1758 AD), the Travancore kingdom. It is built in the architectural style of Kerala with gabled roof, narrow corridor and dormer windows, near the Krishnaswamy Temple at Krishnapuram.The palace is maintained by the Archaeological Department of Kerala and contains exhibits that belonged to the Palace and its former occupant, the Travancore Maharaja Marthanda Varma. It is also famous for a large pond within the palace complex.[1] It is also said that an underground escape route runs from the bottom of the pond as a possible escape route from enemies.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Wayanad">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Banasura Sagar Dam/Banasura Sagar Dam.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Banasura Sagar Dam</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Banasura Sagar Dam/Banasura Sagar Dam.jpg,img/Locations/Banasura Sagar Dam/Banasura Sagar Dam1.jpg,img/Locations/Banasura Sagar Dam/Banasura Sagar Dam2.jpg">
+							<p>Situated about 15 km from Kalpetta, the dam holds a large expanse of water and its picturesque beauty is enhanced by the chain of mountains seen on the backdrop.  It is constructed in the Banasura Lake and the nearby mountains are known as Banasura Hills. Legends say that the Asura king of Banasura, (the son of King Mahabali, who is believed to visit Kerala during every Onam festival) undertook a severe penance on the top of these hills and thus it was named after him.  The scenic mountains beckon adventure tourists and the dam site is an ideal starting point for trekking. </p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Trivandrum">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Poovar Beach/Poovar Beach.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Poovar Beach</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Poovar Beach/Poovar Beach.jpg,img/Locations/Poovar Beach/Poovar Beach1.jpg,img/Locations/Poovar Beach/Poovar Beach2.jpg">
+							<p>Poovar is a tourist town in the Trivandrum district of Kerala state, South India. This village is almost at the southern tip of Trivandrum while the next village, Pozhiyoor, marks the end of Kerala. This village beach attracts tourists.Poovar lies very close to Vizhinjam, a natural harbor. Poovar has an estuary which connects with the sea during high tides. The 56 km Neyyar River passes through Neyyattinkara taluk into the Arabian Sea near Poovar. Its natural environment enables it to be a tourist spot.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kollam">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Shasthankota Lake/Shasthankota Lake.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Shasthankota Lake</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Shasthankota Lake/Shasthankota Lake.jpg,img/Locations/Shasthankota Lake/Shasthankota Lake1.jpg,img/Locations/Shasthankota Lake/Shasthankota Lake2.jpg">
+							<p>Sasthamcotta Lake or Sasthamkotta Lake, also categorized as a wetland, is the largest fresh water lake in Kerala, a state of India on the south of the West Coast. The lake is named after the ancient Sastha temple (a pilgrimage centre) located on its bank. It meets the drinking water needs of half million people of the Quilon district and also provides fishing resources. The purity of the lake water for drinking use is attributed to the presence of large population of larva called cavaborus that consumes bacteria in the lake water. The lake is a designated wetland of international importance under the Ramsar Convention since November 2002.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Pathanmthitta">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Shabarimala/Shabarimala.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Shabarimala</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Shabarimala/Shabarimala.jpg,img/Locations/Shabarimala/Shabarimala1.jpg,img/Locations/Shabarimala/Shabarimala2.jpg">
+							<p>Sabarimala Sree Dharma Sastha Temple, dedicated to Lord Ayyappa, is the most famous and prominent among all the Sastha temples in Kerala. The temple is situated on a hilltop (about 3000 feet above sea level) named Sabarimala in Pathanamthitta district, which is unique in many respects. The uniqueness gathers its voice, as the temple is open to all, irrespective of caste, creed or religion.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Idukki">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Idukki Dam/Idukki Dam.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Idukki Dam</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Idukki Dam/Idukki Dam.jpg,img/Locations/Idukki Dam/Idukki Dam1.jpg,img/Locations/Idukki Dam/Idukki Dam2.jpg">
+							<p>The Idukki hydroelectric project is the biggest of its kind in the State with an installed capacity of 780 MW. It is one of the highest ten arch dams in the world and the third highest in India after the Tehri Dam (Uttarakhand) and Bhakra Nangal Dam (Himachal Pradesh).  The Rs. 107.5 crore project, built and managed by the Kerala State Electricity Board (KSEB), was commissioned by the then Prime minister of India, Indira Gandhi in 1976. It took 220 lakh man days to complete the project</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Thrissur">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Vadakumnath Temple/Vadakumnath Temple.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Vadakumnath Temple</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Vadakumnath Temple/Vadakumnath Temple.jpg,img/Locations/Vadakumnath Temple/Vadakumnath Temple1.jpg,img/Locations/Vadakumnath Temple/Vadakumnath Temple2.jpg">
+							<p>Vadakkunnathan Temple is an ancient Hindu temple dedicated to Shiva at city of Thrissur, of Kerala state in India. This temple is a classic example of the architectural style of Kerala and has monumental towers on all four sides and also a kuttambalam. Mural paintings depicting various episodes from Mahabharata can be seen inside the temple. The shrines and the Kuttambalam display vignettes carved in wood. The temple, along with the mural paintings, has been declared as a National Monument by India under the AMASR Act. According to popular local lore, this is the first temple built by Parasurama, the sixth avatar of Vishnu. Thekkinkadu maidan, encircling the Vadakkunnathan Temple, is the main venue of the Thrissur Pooram. Non-Hindus are not allowed to enter into the temple.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Palakkadu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Sholayar/Sholayar.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Sholayar</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Sholayar/Sholayar.jpg,img/Locations/Sholayar/Sholayar1.jpg,img/Locations/Sholayar/Sholayar2.jpg">
+							<p>Sholayar Dam, to be specific the lower Sholayar dam is located more than 60 km from Chalakudy town. The difference with the upper and lower is because the dam has two reservoirs. The Upper Sholayar Dam is accessed by tourist and it is located in Tamil Nadu whereas, the other is located in Kerala, called as the Lower Sholayar Dam. This attraction is the lifeline of the local people and this dam is surrounded by Sholayar forest.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Malappuram">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kadalundi Bird Sanctuary/Kadalundi Bird Sanctuary.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Kadalundi Bird Sanctuary</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Kadalundi Bird Sanctuary/Kadalundi Bird Sanctuary.jpg,img/Locations/Kadalundi Bird Sanctuary/Kadalundi Bird Sanctuary1.jpg,img/Locations/Kadalundi Bird Sanctuary/Kadalundi Bird Sanctuary2.jpg">
+							<p>The Kadalundi Bird Sanctuary is spread over a cluster of islands in a scenic area surrounded by hillocks where the Kadalundi River flows into the Arabian Sea. The place is locally known as Kadalundi Nagaram.This virgin land is the abode more than a hundred species of native birds and over 60 species of migratory birds, like seagulls, terns, sandpipers, sandplovers, red and greenshanks, turnstones, that flock here in large numbers from November to April.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kozhikodu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kallayi River/Kallayi River.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Kallayi River</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Kallayi River/Kallayi River.jpg,img/Locations/Kallayi River/Kallayi River1.jpg,img/Locations/Kallayi River/Kallayi River2.jpg">
+							<p>Kallayi is one of the rivers in Kerala, India. It originates in Cherikkulathur in the Western Ghats, at an altitude of 45 metres (148 ft) and is 40 km (24.9 mi) long. It is linked to the Chaliyar River by a man-made canal on the south side of the small timber village of Kallayi lying on its banks. The Kallayi was known for its timber businesses, but now many of these have been closed down.Its basin is located in the Kozhikode District</p>
+						</div>
+					</div>
+				</div>
+				<div class="reference-item" data-category="Kannur">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Payyambalam Beach/Payyambalam Beach.jpg" class="img-responsive" alt="" />
+							<div class="overlay">
+								<h3 class="reference-title">Payyambalam Beach</h3>
+							</div>
+						</a>
+						<div class="sr-only reference-description" data-images="img/Locations/Payyambalam Beach/Payyambalam Beach.jpg,img/Locations/Payyambalam Beach/Payyambalam Beach1.jpg,img/Locations/Payyambalam Beach/Payyambalam Beach2.jpg">
+							<p>Quiet, secluded, this beautiful stretch of sand and surf is the best locale for a relaxed evening. The Payyambalam beach is a popular picnic spot of the local people and holds much potential for development into a tourist resort.The rest of the land - Kannur - is equally fascinating to explore. Being the cradle of ageless folk arts like Theyyam and folk music, Kannur has always remained a land of ageless charms.However, if you decide to hide away at this beach destination, your stay should be arranged in the town 2 km away. Comfortable accommodation is available.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="reference-item" data-category="Kasarkodu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Adnanthapuram/Adnanthapuram.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Adnanthapuram</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Adnanthapuram/Adnanthapuram.jpg,img/Locations/Adnanthapuram/Adnanthapuram1.jpg,img/Locations/Adnanthapuram/Adnanthapuram2.jpg">
+
+							<p>Ananthapura Lake Temple in Kasaragod, built in 9th century, is the only lake temple in Kerala and is the moolasthanam (original abode) of Ananthapadmanabha, the deity of Sree Padmanabhaswamy Temple in Thiruvananthapuram. The sanctum sanctorum of temple is reachable only by a bridge. A crocodile at the temple pond, said to be 150 years old, is a major attraction.</p>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="reference-item" data-category="Kochi">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Tripunithura Hill Palace/Tripunithura Hill Palace.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Tripunithura Hill Palace</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Tripunithura Hill Palace/Tripunithura Hill Palace.jpg,img/Locations/Tripunithura Hill Palace/Tripunithura Hill Palace1.jpg,img/Locations/Tripunithura Hill Palace/Tripunithura Hill Palace2.jpg">
+
+							<p>Hill Palace is the largest archaeological museum in Kerala, located at Tripunithura, Kochi, near Karingachira area.[1] It was the Imperial Administrative offices and official residence of Cochin Maharaja. Built in 1865, the Palace complex consists of 49 buildings in the traditional architectural style, spreading across in 54 acres (220,000 m2). The complex has an archaeological museum, a heritagemuseum, a deer park, a pre-historic park and a children’s park.[2] The campus of the museum is home to several rare species of medicinal plants. Presently the palace has been converted into a museum by The Kerala State Archaeology Department and is open to public all days except Mondays from 9:00 am to 12:30 pm and 2:00 pm to 5:00 pm. The palace is about 12 km from Ernakulam mainland and approachable by road and rail</p>
+
+
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="reference-item" data-category="Trivandrum">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Padmanaba Swami Temple/Padmanaba Swami Temple.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Padmanaba Swami Temple</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Padmanaba Swami Temple/Padmanaba Swami Temple1.jpg,img/Locations/Padmanaba Swami Temple/Padmanaba Swami Temple2.jpg,img/Locations/Padmanaba Swami Temple/Padmanaba Swami Temple.jpg">
+
+							<p>Padmanabhaswamy Temple is located in Thiruvananthapuram, Kerala, India. The temple is built in an intricate fusion of the indigenous Kerala style and the Dravidian style (kovil) of architecture associated with the temples located in the neighbouring state of Tamil Nadu, featuring high walls, and a 16th-century Gopuram. While the Moolasthanam of the temple is the Ananthapuram Temple in Kasargod, architecturally to some extent, the temple is a replica of the Adikesava Perumal temple located in Kanyakumari District</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Pathanmthitta">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kakki/Kakki.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Kakki</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Kakki/Kakki.jpg,img/Locations/Kakki/Kakki1.jpg,img/Locations/Kakki/Kakki2.jpg">
+
+							<p>Kakki Reservoir is a reservoir, located in Pathanamthitta district of Kerala, India. The lake, which was created when Kakki and Anathode dams were built, is on one of the tributaries of Pamba, the Kakki tributary. The dams were built in 1966 as part of the Sabarigiri Hydroelectric project. Full reservoir level (FRL) is 981.45 meters above sea level according to the operators of the "twin" reservoirs, the Kerala State Electricity Board. The reservoir, which is also a tourist spot, is nestled in the Pathanamthitta reserve forest, very close to the Western Ghats.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Idukki">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Thekkadi/Thekkadi.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Thekkadi</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Thekkadi/Thekkadi.jpg,img/Locations/Thekkadi/Thekkadi1.jpg,img/Locations/Thekkadi/Thekkadi2.jpg">
+
+							<p>The very sound of the word Thekkady conjures up images of elephants, unending chains of hills and spice scented plantations. The Periyar forests of Thekkady is one of the finest wildlife reserves in India. Spreads across the entire district are the picturesque plantations and hill towns that nestle beautiful trails for treks and mountain walks.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Palakkadu">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kalpathy/Kalpathy.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Kalpathy</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Kalpathy/Kalpathy.jpg,img/Locations/Kalpathy/Kalpathy1.jpg,img/Locations/Kalpathy/Kalpathy2.jpg">
+
+							<p>Kalpathi (or Kalpathy) is an early Tamil Brahmin settlement (agraharam) in the Palakkad District of Kerala state, south India.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Malappuram">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kakkadam Poyil/Kakkadam Poyil.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Kakkadam Poyil</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Kakkadam Poyil/Kakkadam Poyil.jpg,img/Locations/Kakkadam Poyil/Kakkadam Poyil1.jpg,img/Locations/Kakkadam Poyil/Kakkadam Poyil2.jpg">
+
+							<p>A large number of tourists come to Kakkadampoyil to enjoy the cool climate and to stay away from the bustle of the city.On the mountain ranges of Western Ghats bordering Kerala. Kakkadanpoyil village, an unexplored hill station 48 km away from Calicut City. Surrounded by forests, misty hill ranges, deserted roads, untouched waterfalls (Kozhippara waterfalls), make the village worth a visit. Facilities for tourists are available.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Kannur">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Arakkal Museum/Arakkal Museum.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Arakkal Museum</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Arakkal Museum/Arakkal Museum.jpg,img/Locations/Arakkal Museum/Arakkal Museum1.jpg,img/Locations/Arakkal Museum/Arakkal Museum2.jpg">
+
+							<p>Arakkal Kettu was the residence of the former Arakkal Ali Rajas, the only Muslim royal family of Kerala. Protected by the Archaeological and Tourism Department, this palace complex is today a museum. The Arakkal Kettu Museum houses a splendid display of numerous artefacts and heirlooms belonging to the Rajas. The musuem is closed on Mondays.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Kochi">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kerala Folklore Museum/Kerala Folklore Museum.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Kerala Folklore Museum</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Kerala Folklore Museum/Kerala Folklore Museum.jpg,img/Locations/Kerala Folklore Museum/Kerala Folklore Museum1.jpg,img/Locations/Kerala Folklore Museum/Kerala Folklore Museum2.jpg">
+
+							<p>This is Kerala Folklore Theatre and Museum at Thevara, Ernakulam - a unique venture to preserve the splendid folklore wealth of the State.Opened in the year 2009 as a non-profit organization, the museum is truly a treasure trove that showcases the rich heritage that Kerala exudes through its numerous art and dance forms. Artifacts that bear the scent of bygone era like masks, sculptures, in wood, stone and bronze, costumes of traditional and ritual art forms, musical instruments, traditional jewelry, manuscripts of rare medicinal and astrological secrets, and Stone-Age utensils are all preserved in this museum with utmost care.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Trivandrum">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kottur Elephant Park/Kottur Elephant Park.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Kottur Elephant Park</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Kottur Elephant Park/Kottur Elephant Park.jpg,img/Locations/Kottur Elephant Park/Kottur Elephant Park1.jpg,img/Locations/Kottur Elephant Park/Kottur Elephant Park2.jpg">
+
+							<p>Lying in the lap of the Agasthyakoodam hill range in the Western Ghats and located towards the east of Kerala's Capital City, Thiruvananthapuram, is Kottur. The region with a good forest cover is a haven for birds and other wildlife, and is marked by tall forest tree species and numerous rivulets and streams. This forest area is part of the Agasthyavanam Biological Park. Visitors to Kottur forest area are allowed to proceed some 1.5 kms beyond the forest check post, which would end at a watchtower. The view from the watchtower at Kottur is an enchanting one with splendid views of the peaks of Thottumpara, Kathirumudi, Agasthyakoodam, Pandipathu and the popular hill resort of Ponmudi.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Pathanmthitta">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Kaviyoor/Kaviyoor.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Kaviyoor</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Kaviyoor/Kaviyoor.jpg,img/Locations/Kaviyoor/Kaviyoor1.jpg,img/Locations/Kaviyoor/Kaviyoor2.jpg">
+
+							<p>Kaviyoor is a small village, appearing in historic books as one of the ancient 64 Brahmin settlements of Kerala. It is located on the western bank of the river Manimala in the taluk of Tiruvalla in Pathanamthitta district of Kerala, India. It is a highly literate (97%) village. There are three major high schools established over 50 years ago. There are also a number of primary/junior schools and a couple of Teacher Training Institutes. Kaviyoor used to have a prosperous agrarian economy till agriculture more or less became unviable of late. It is serviced by two nationalized banks and two local co-operative banks.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Idukki">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Parunthumpara/Parunthumpara.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Parunthumpara</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Parunthumpara/Parunthumpara.jpg,img/Locations/Parunthumpara/Parunthumpara1.jpg,img/Locations/Parunthumpara/Parunthumpara2.jpg">
+
+							<p>Parunthumpara is a small village, located between Peermade and Thekkady. The word parunth in the local language means Eagle and para means rock. It is called Parunthumpara or eagle rock because of a large area around like an eagle.It is 6 km from Peermade, 25 km from Thekkady and 3 km From National Highway 220.( Kottayam Kumily road).This area provides a bird's eye view of an endless stretch of green forest land and low-lying areas.Parunthumpara is six km from Peerumade on National Highway 220 and is increasingly being visited by tourists who are on their way to Thekkady and others as well. If the sky is clear, visitors can get the view of the Sabarimala forests.</p>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Kannur">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/St Anchelo Fort/St Anchelo Fort.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">St Anchelo Fort</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/St Anchelo Fort/St Anchelo Fort.jpg,img/Locations/St Anchelo Fort/St Anchelo Fort1.jpg,img/Locations/St Anchelo Fort/St Anchelo Fort2.jpg">
+
+							<p>A massive triangular laterite fort, replete with a moat and flanking bastions, the St. Angelo's Fort also called Kannur Fort was constructed by the first Portuguese Viceroy, Don Francesco de Almeida in 1505. In 1663, the Dutch captured the fort from the Portuguese and sold it to Ali Raja of Kannur. In 1790 the British who seized control over the fort, renovated and equipped it to be their most important military station in Malabar.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Kochi">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Fort Kochi/Fort Kochi.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Fort Kochi</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Fort Kochi/Fort Kochi.jpg,img/Locations/Fort Kochi/Fort Kochi1.jpg,img/Locations/Fort Kochi/Fort Kochi2.jpg">
+
+							<p>Fort Kochi beach is a beach along the Arabian Sea situated in Old Kochi respectively Fort Kochi area of the city of Kochi in South India, Keralastate.Unique views and point of interests are the so-called Chinese fishing nets (Cheena vala, Malayalam language: ചീനവല) and the fishermen working there: commonly known as "Chinese fishing nets" they are shore operated lift nets, each measering about 10 metres (33 ft) in height, sustaining a cantilever with an outstretched net of 20 metres (66 ft) or more, suspended over the sea and large stones suspended from ropes as counterweights at the other end. Each installation is operated by a team of up to six fishermen.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Trivandrum">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Priyadarshini Planetarium/Priyadarshini Planetarium.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Priyadarshini Planetarium</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Priyadarshini Planetarium/Priyadarshini Planetarium.jpg,img/Locations/Priyadarshini Planetarium/Priyadarshini Planetarium1.jpg,img/Locations/Priyadarshini Planetarium/Priyadarshini Planetarium2.jpg">
+
+							<p>Opened in 1994 to the public, this is one of the most versatile planetariums in the country. The main GM-11 star field projector here can project almost all the constituents of the visible universe. It can also simulate the star-studded night sky over any location on the earth, on any day up to 12,500 years back or 12,500 years into the future. The planetarium will be closed on Mondays.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Idukki">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Mattupetty/Mattupetty.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Mattupetty</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Mattupetty/Mattupetty.jpg,img/Locations/Mattupetty/Mattupetty1.jpg,img/Locations/Mattupetty/Mattupetty2.jpg">
+
+							<p>Cradled by the undulating plantation hills of Munnar, and not far away from the Anamudi peak is Mattupetty. Situated in the famous hill town of Munnar, Mattupetty located 13 km from Munnar is situated at a height of 1700 m, and is a delight for nature lovers.Mattupetty offers many fascinating sights to relish. Besides the lush green tea plantations, and the rolling grasslands, the Shola forests in and around Mattupetty are ideal for trekking and are habitat to a variety of birds. Rivulets and cascades crisscross the terrain here, which again adds more attraction to the place.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="reference-item" data-category="Kannur">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Mahi/Mahi.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Mahi</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Mahi/Mahi.jpg,img/Locations/Mahi/Mahi1.jpg,img/Locations/Mahi/Mahi2.jpg">
+
+							<p>Mahé, natively known as Mayyazhi, is a small town at the mouth of the Mahé River and is surrounded on all sides by the State of Kerala. The Kannur District surrounds Mahé on three sides and Kozhikode District from one side.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Kochi">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Mattanchery Palace/Mattanchery Palace.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Mattanchery Palace</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Mattanchery Palace/Mattanchery Palace.jpg,img/Locations/Mattanchery Palace/Mattanchery Palace1.jpg,img/Locations/Mattanchery Palace/Mattanchery Palace2.jpg">
+
+							<p>The Mattancherry Palace is a Portuguese palace popularly known as the Dutch Palace, in Mattancherry, Kochi, in the Indian state of Kerala which features Kerala murals depicting portraits and exhibits of the Rajas of Kochi</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Trivandrum">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Akkulam Tourist Village/Mattanchery Palace.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Akkulam Tourist Village</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Akkulam Tourist Village/Mattanchery Palace.jpg,img/Locations/Akkulam Tourist Village/Akkulam Tourist Village1.jpg,img/Locations/Akkulam Tourist Village/Akkulam Tourist Village2.jpg">
+
+							<p>Akkulam is a neighborhood of Thiruvananthapuram city, the capital of Kerala state in India. It is about 10 km from Thiruvananthapuram city center. It is a well known as a picnic, backwater destination having the Akkulam Lake joining with the sea. Akkulam Tourist village and Akkulam Boat Club are the major picnic spots int the area.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Idukki">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Pallivasal Dam/Pallivasal Dam.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Pallivasal Dam</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Pallivasal Dam/Pallivasal Dam.jpg,img/Locations/Pallivasal Dam/Pallivasal Dam1.jpg,img/Locations/Pallivasal Dam/Pallivasal Dam2.jpg">
+
+							<p>Pallivasal is located 8 km from Munnar in Idukki district, Kerala. This is the site of the first Hydro-Electric Project in Kerala and a place of immense scenic beauty.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Kochi">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Indo Portuguese Museum/Indo Portuguese Museum.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Indo Portuguese Museum</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Indo Portuguese Museum/Indo Portuguese Museum.jpg,img/Locations/Indo Portuguese Museum/Indo Portuguese Museum1.jpg,img/Locations/Indo Portuguese Museum/Indo Portuguese Museum2.jpg">
+
+							<p>The Indo-Portuguese Museum, located within the premises of the Bishop’s House, displays various artefacts collected from different churches. The museum, preserves the rich heritage of Indo-Portuguese culture, art and architecture in Kerala, owes its origin to Dr Joseph Kureethra, the erstwhile Bishop of Kochi. </p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="reference-item" data-category="Trivandrum">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Trivandrum Museum/Trivandrum Museum.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Trivandrum Museum</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Trivandrum Museum/Trivandrum Museum.jpg,img/Locations/Trivandrum Museum/Trivandrum Museum1.jpg,img/Locations/Trivandrum Museum/Trivandrum Museum2.jpg">
+
+							<p>Napier Museum and Natural History Museum are situated in the Museum compound, right in the heart of the Thiruvananthapuram city, near the zoological park.Napier Museum built in the 19th century, this Indo-Saracenic structure boasts a natural air-conditioning system and houses a rare collection of archaeological and historic artefacts, bronze idols, ancient ornaments, a temple chariot and ivory carvings. The Japanese shadow play leather figures, used to depict the epics of Mahabharata and the Ramayana, are very interesting.A visit to the Napier Museum complex reveals a glimpse of Kerala's rich cultural heritage. An exceptional piece of architecture, the Museum is named after the former Madras Governor General, John Napier. The Napier Museum is also called the Government Art Museum. The Museum building is a combination of the Kerala, Mughal, Chinese and Italian architectural styles</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="reference-item" data-category="Kochi">
+					<div class="reference">
+						<a href="#">
+							<img src="img/Locations/Ernakulam Shiva Temple/Ernakulam Shiva Temple.jpg" class="img-responsive" alt="" />
+
+							<div class="overlay">
+								<h3 class="reference-title">Ernakulam Shiva Temple</h3>
+							</div>
+						</a>
+
+						<div class="sr-only reference-description" data-images="img/Locations/Ernakulam Shiva Temple/Ernakulam Shiva Temple.jpg,
+						img/Locations/Ernakulam Shiva Temple/Ernakulam Shiva Temple1.jpg,
+						img/Locations/Ernakulam Shiva Temple/Ernakulam Shiva Temple2.jpg">
+
+						<p>Ernakulam Shiva Temple, also known as Ernakulathappan Temple is one of the major temples of Kerala, located in heart of Ernakulam,[1] the downtown area of the city of Kochi. The temple, dedicated to Lord Shiva, is considered as the city temple, with the presiding deity as the protector of the city, as per local Hindu faiths and traditions. As per the common practice in Kerala, the deity is reverently called Ernakulathappan, which means Lord of Ernakulam. The temple is located within the Durbar Hall Ground. The temple history itself has deep association with history of the city and was one of the 7 royal temples of Kochi Maharajas. The temple is now under administration of Cochin Devasom Board</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="reference-item" data-category="Kochi">
+				<div class="reference">
+					<a href="#">
+						<img src="img/Locations/Museum of Kerala History/Ernakulam Shiva Temple.jpg" class="img-responsive" alt="" />
+
+						<div class="overlay">
+							<h3 class="reference-title">Museum of Kerala History</h3>
+						</div>
+					</a>
+
+					<div class="sr-only reference-description" data-images="img/Locations/Museum of Kerala History/Ernakulam Shiva Temple.jpg,img/Locations/Museum of Kerala History/Ernakulam Shiva Temple1.jpg,img/Locations/Museum of Kerala History/Ernakulam Shiva Temple2.jpg">
+
+						<p>PLocated a little distance from the crowded urban centre of Ernakulam is a quiet ethnic building hidden in the shades of huge trees. A statue of Parasurama, the sage who is said to have created Kerala, greets the visitor. This is a monument to the history of Kerala and homage to its makers. The Madhavan Nayar Foundation also called the Museum of Kerala History and its makers showcases historic episodes from the neolithic to the modern era through life size figures.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="reference-item" data-category="Kochi">
+				<div class="reference">
+					<a href="#">
+						<img src="img/Locations/Aspinwall House/Aspinwall House.jpg" class="img-responsive" alt="" />
+
+						<div class="overlay">
+							<h3 class="reference-title">Aspinwall House</h3>
+						</div>
+					</a>
+
+					<div class="sr-only reference-description" data-images="img/Locations/Aspinwall House/Aspinwall House.jpg,img/Locations/Aspinwall House/Aspinwall House1.jpg,img/Locations/Aspinwall House/Aspinwall House2.jpg">
+
+						<p>Aspinwall House is a large sea-facing heritage property in Fort Kochi on the way to Mattancherry.The property was originally the business premises of Aspinwall and Company Ltd. established in 1867 by English trader John H Aspinwall. Under the guidance of Aspinwall the Company traded in coconut oil, pepper, timber, lemon grass oil, ginger, turmeric, spices, hides and later in coir, coffee, tea and rubber.</p>
+					</div>
+				</div>
+			</div> 
+
+
+			<div class="reference-item" data-category="Kochi">
+				<div class="reference">
+					<a href="#">
+						<img src="img/Locations/Paradesi Synagogue/Paradesi Synagogue.jpg" class="img-responsive" alt="" />
+
+						<div class="overlay">
+							<h3 class="reference-title">Paradesi Synagogue</h3>
+						</div>
+					</a>
+
+					<div class="sr-only reference-description" data-images="img/Locations/Paradesi Synagogue/Paradesi Synagogue.jpg,img/Locations/Paradesi Synagogue/Paradesi Synagogue1.jpg,img/Locations/Paradesi Synagogue/Paradesi Synagogue2.jpg">
+
+						<p>The Paradesi Synagogue is the oldest active synagogue in the Commonwealth of Nations, located in Kochi, Kerala, in South India. Constructed in 1567, it is one of seven synagogues of the Malabar Yehudan or Yehudan Mappila people or Cochin Jewish community in the Kingdom of Cochin. Paradesi is a word used in several Indian languages, and the literal meaning of the term is "foreigners", applied to the synagogue because it was built by Sephardic or Spanish-speaking Jews, some of them from families exiled in Aleppo, Safed and other West Asian localities. It is also referred to as the Cochin Jewish Synagogue or the Mattancherry Synagogue</p>
+					</div>
+				</div>
+			</div> 
+
+
+			<div class="reference-item" data-category="Kochi">
+				<div class="reference">
+					<a href="#">
+						<img src="img/Locations/St. Francis Church Kochi/St. Francis Church Kochi.jpg" class="img-responsive" alt="" />
+
+						<div class="overlay">
+							<h3 class="reference-title">St. Francis Church Kochi</h3>
+						</div>
+					</a>
+
+					<div class="sr-only reference-description" data-images="img/Locations/St. Francis Church Kochi/St. Francis Church Kochi.jpg,img/Locations/St. Francis Church Kochi/St. Francis Church Kochi1.jpg,img/Locations/St. Francis Church Kochi/St. Francis Church Kochi2.jpg">
+
+						<p>St. Francis CSI Church, in Fort Kochi (a.k.a. Fort Cochin), originally built in 1503, is the oldest European church in India and has great historical significance as a mute witness to the European colonial struggle in the subcontinent. The Portuguese explorerVasco da Gama died in Kochi in 1524 when he was on his third visit to India. His body was originally buried in this church, but after fourteen years his remains were removed to Lisbon</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="reference-item" data-category="Kochi">
+				<div class="reference">
+					<a href="#">
+						<img src="img/Locations/Chottanikkara Temple/Chottanikkara Temple.jpg" class="img-responsive" alt="" />
+
+						<div class="overlay">
+							<h3 class="reference-title">Chottanikkara Temple</h3>
+						</div>
+					</a>
+
+					<div class="sr-only reference-description" data-images="img/Locations/Chottanikkara Temple/Chottanikkara Temple.jpg,img/Locations/Chottanikkara Temple/Chottanikkara Temple1.jpg,img/Locations/Chottanikkara Temple/Chottanikkara Temple2.jpg">
+
+						<p>The Chottanikkara (correction of Jyotiannakkara) Devi Temple (Malayalam: ചോറ്റാനിക്കര ഭഗവതി ക്ഷേത്രം) is a famous temple of mother goddess Shakthi devi or Rajarajeshwari known as Sree Bhagavathi. Maha lakshmi is supposed to be residing in Chottanikkara along with Lord Vishnu. The temple is located at Chottanikkara, Kochi in the southern Indian state of Kerala and is one of the most popular temples in the state and in terms of temple architecture, this temple stands out to be an ultimate testmonial for the ancient vishwakarma sthapathis (wooden sculpture) in sculpting this temple along with Sabarimala temple.</p>
+					</div>
+				</div>
+			</div>               
+
+		</div>
+		<!-- /#references-masonry -->
+
+	</div>
+	<!-- /.12 -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /.section -->
+
+<!-- *** REFERENCES END *** -->     
 
-                                <div class="sr-only reference-description" data-images="img/Locations/Kochi/kochi1.jpg,img/Locations/Kochi/kochi2.jpg,img/Locations/Kochi/kochi3.jpg">
 
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
 
-                                    <p class="buttons">
-                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                    </p>
-                                </div>
 
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="wayanad">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Wayanad/wayanad.jpg" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Wayanad</h3> 
-                                        <p>Wild Wild West</p>
-                                    </div>
-                                </a>
-
-                                <div class="sr-only reference-description" data-images="img/Locations/Wayanad/wayanad.jpg,img/Locations/Wayanad/wayanad1.jpg,img/Locations/Wayanad/wayanad2.jpg,img/Locations/Wayanad/wayanad3.jpg">
-
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="wayanad">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Wayanad/wayanad2.jpg" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Chinnar</h3> 
-                                        <p>Beauty of Wayanad</p>
-                                    </div>
-                                </a>
-
-                                <div class="sr-only reference-description" data-images="img/Locations/Wayanad/wayanad2.jpg,img/Locations/Wayanad/wayanad1.jpg,img/Locations/Wayanad/wayanad3.jpg">
-
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="kochi">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Kochi/kochi3.jpg" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Bolgatty Palace</h3> 
-                                        <p>Dutch Touch in Kochi</p>
-                                    </div>
-                                </a>
-
-                                <div class="sr-only reference-description" data-images="img/Locations/Kochi/kochi3.jpg,img/Locations/Kochi/kochi1.jpg,img/Locations/Kochi/kochi2.jpg">
-
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="alappuzha">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Alappuzha/alappy4.jpg" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Alappy Beach</h3> 
-                                        <p>Perfect Sea Scean</p>
-                                    </div>
-                                </a>
-
-                                <div class="sr-only reference-description" data-images="img/Locations/Alappuzha/alappy4.jpg,img/Locations/Alappuzha/alappy1.jpg,img/Locations/Alappuzha/alappy2.jpg,img/Locations/Alappuzha/alappy3.jpg">
-
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-
-                                    <p class="buttons">
-                                       <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="munnar">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Munnar/munnar4.png" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Anamudy</h3> 
-                                        <p>Heighest Peak</p>
-                                    </div>
-                                </a>
-
-                                <div class="sr-only reference-description" data-images="img/Locations/Munnar/munnar4.png,img/Locations/Munnar/munnar3.png,img/Locations/Munnar/munnar2.png">
-
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        
-                        
-                        
-                        
-                                                <div class="reference-item" data-category="alappuzha">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Alappuzha/alappy5.jpg" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Alapuzha</h3> 
-                                        <p>Veneice in the west</p>
-                                    </div>
-                                </a>
-
-                                <div class="sr-only reference-description" data-images="img/Categories/Boating/Alapuzha/alappy2.jpg,img/Categories/Boating/Alapuzha/alappy3.jpg,img/Categories/Boating/Alapuzha/alappy5.jpg">
-
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reference-item" data-category="munnar">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Munnar/munnar.jpg" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Munnar</h3> 
-                                        <p>Beauty of the Nature</p>
-                                    </div>
-                                </a>
-
-                                <div class="sr-only reference-description" data-images="img/Locations/Munnar/munnar1.jpg,img/Locations/Munnar/munnar2.jpg,img/Locations/Munnar/munnar3.jpg">
-
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="kochi">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Kochi/kochi1.jpg" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Kochi</h3> 
-                                        <p>Queen of Arabian Sea</p>
-                                    </div>
-                                </a>
-
-                                <div class="sr-only reference-description" data-images="img/Locations/Kochi/kochi1.jpg,img/Locations/Kochi/kochi2.jpg,img/Locations/Kochi/kochi3.jpg">
-
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="wayanad">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Wayanad/wayanad.jpg" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Wayanad</h3> 
-                                        <p>Wild Wild West</p>
-                                    </div>
-                                </a>
-
-                                <div class="sr-only reference-description" data-images="img/Locations/Wayanad/wayanad.jpg,img/Locations/Wayanad/wayanad1.jpg,img/Locations/Wayanad/wayanad2.jpg,img/Locations/Wayanad/wayanad3.jpg">
-
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="wayanad">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Wayanad/wayanad2.jpg" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Chinnar</h3> 
-                                        <p>Beauty of Wayanad</p>
-                                    </div>
-                                </a>
-
-                                <div class="sr-only reference-description" data-images="img/Locations/Wayanad/wayanad2.jpg,img/Locations/Wayanad/wayanad1.jpg,img/Locations/Wayanad/wayanad3.jpg">
-
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="kochi">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Kochi/kochi3.jpg" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Bolgatty Palace</h3> 
-                                        <p>Dutch Touch in Kochi</p>
-                                    </div>
-                                </a>
-
-                                <div class="sr-only reference-description" data-images="img/Locations/Kochi/kochi3.jpg,img/Locations/Kochi/kochi1.jpg,img/Locations/Kochi/kochi2.jpg">
-
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="alappuzha">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Alappuzha/alappy4.jpg" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Alappy Beach</h3> 
-                                        <p>Perfect Sea Scean</p>
-                                    </div>
-                                </a>
-
-                                <div class="sr-only reference-description" data-images="img/Locations/Alappuzha/alappy4.jpg,img/Locations/Alappuzha/alappy1.jpg,img/Locations/Alappuzha/alappy2.jpg,img/Locations/Alappuzha/alappy3.jpg">
-
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reference-item" data-category="munnar">
-                            <div class="reference">
-                                <a href="#">
-                                    <img src="img/Locations/Munnar/munnar4.png" class="img-responsive" alt="" />
-
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Anamudy</h3> 
-                                        <p>Heighest Peak</p>
-                                    </div>
-                                </a>
-
-                                <div class="sr-only reference-description" data-images="img/Locations/Munnar/munnar4.png,img/Locations/Munnar/munnar3.png,img/Locations/Munnar/munnar2.png">
-
-                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
-                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
-
-                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
-                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
-
-                                    <p class="buttons">
-                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-plus-circle"></i> Add To Tour </a>
-                                      
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-
-                    </div>
-                    <!-- /#references-masonry -->
-
-                </div>
-                <!-- /.12 -->
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /.section -->
-
-        <!-- *** REFERENCES END *** -->     
-       
-       
-       
-                   
 
 
 <!-- *** TRIP PLAN ENDS ***
-_________________________________________________________ -->      
+	_________________________________________________________ -->      
 
 
- 
-
-        
-        <!-- *** CONTACT ***
-_________________________________________________________ -->
-
-        <div class="section contact" id="contact" data-animate="bounceIn">
-            <div class="container">
-                <div class="col-md-12">
 
 
-                    <h2 class="title">Contact me</h2>
 
-                    <div class="row">
+		<!-- *** CONTACT ***
+		_________________________________________________________ -->
 
-                        <div class="col-md-8 col-md-offset-2">
-                            <form id="contact-form" method="post" action="contact.php">
+		<!-- /.section -->
 
-                                <div class="messages">
+		<!-- *** CONTACT END *** -->
 
-                                </div>
-
-                                <div class="controls">
-
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <input type="text" name="name" class="form-control" placeholder="Your firstname *" required="required">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="text" name="surname" class="form-control" placeholder="Your lastname *" required="required">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="text" name="email" class="form-control" placeholder="Your email *" required="required">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="text" name="phone" class="form-control" placeholder="Your phone">
-                                        </div>
-                                        <div class="col-md-12">
-                                            <textarea name="message" class="form-control" placeholder="Message for me *" rows="4" required></textarea>
-                                        </div>
-                                        <div class="col-md-12 text-center">
-                                            <input type="submit" class="btn btn-primary btn-lg" value="Send message">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </form>
-                        </div>
-
-                    </div>
-
-                </div>
-                <!-- /.12 -->
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /.section -->
-
-        <!-- *** CONTACT END *** -->
-
-        <!-- *** MAP ***
-_________________________________________________________ -->
+		<!-- *** MAP ***
+		_________________________________________________________ -->
 
 <!--
-        <div class="section" id="map">
+		<div class="section" id="map">
 
-        </div>
--->
-        <!-- /.section -->
+		</div>
+	-->
+	<!-- /.section -->
 
-        <!-- *** MAP END *** -->
+	<!-- *** MAP END *** -->
 
-        <!-- *** FOOTER ***
-_________________________________________________________ -->
+		<!-- *** FOOTER ***
+		_________________________________________________________ -->
 
-        <div class="section" id="footer">
-            <div class="container">
+		<div class="section" id="footer">
+			<div class="container">
 
-                <div class="row">
+				<div class="row">
 
-                    <div class="col-sm-6">
+					<div class="col-sm-6">
 
-                        <p class="social">
-                            <a href="#" class="external facebook" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="external instagram" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="external gplus" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="email" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
-                        </p>
-                    </div>
-                    <!-- /.6 -->
+						<p class="social">
+							<a href="#" class="external facebook" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-facebook"></i></a>
+							<a href="#" class="external instagram" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-instagram"></i></a>
+							<a href="#" class="external gplus" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-google-plus"></i></a>
+							<a href="#" class="email" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+						</p>
+					</div>
+					<!-- /.6 -->
 
-                    <div class="col-sm-6">
-                        <p>&copy; 2017 UTOPIA Tours and Advise. All rights reserved.</p>
-                    </div>
+					<div class="col-sm-6">
+						<p>&copy; 2017 UTOPIA Tours and Advise. All rights reserved.</p>
+					</div>
 
-                </div>
+				</div>
 
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /.section -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.section -->
 
-        <!-- *** FOOTER END *** -->
+		<!-- *** FOOTER END *** -->
 
 
 
-    </div>
-    
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>
+	</div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>
 	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
-</script>
-<script src="js/cartmain1.js"></script>
-    
-    <!-- /#all -->
+	</script>
+	<script src="js/cartmain1.js"></script>
+	
+	<!-- /#all -->
 
-    <!-- #### JAVASCRIPT FILES ### -->
-           
-    <!-- js base -->
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+	<!-- #### JAVASCRIPT FILES ### -->
 
-    <!-- for demo purpose -->
-    <script src="js/jquery.cookie.js"></script>
+	<!-- js base -->
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
-    <!-- waypoints for scroll spy -->
-    <script src="js/waypoints.min.js"></script>
+	<!-- for demo purpose -->
+	<script src="js/jquery.cookie.js"></script>
 
-    <!-- maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
-    <!-- to use it on your site, generate your own API key for Google Maps and paste it above -->
-    <script src="js/gmaps.js"></script>
+	<!-- waypoints for scroll spy -->
+	<script src="js/waypoints.min.js"></script>
 
-    <!-- masonry layout -->
-    <script src="js/masonry.pkgd.min.js"></script>
+	<!-- maps -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+	<!-- to use it on your site, generate your own API key for Google Maps and paste it above -->
+	<script src="js/gmaps.js"></script>
 
-    <!-- owl carousel -->
-    <script src="js/owl.carousel.min.js"></script>
+	<!-- masonry layout -->
+	<script src="js/masonry.pkgd.min.js"></script>
 
-
-    <!-- jQuery scroll to -->
-    <script src="js/jquery.scrollTo.min.js"></script>
-
-    <!-- jQuery counter -->
-    <script src="js/jquery.counterup.min.js"></script>
-
-    <!-- jQuery parallax -->
-    <script src="js/jquery.parallax-1.1.3.js"></script>
-
-    <!-- main js file -->
-
-    <script src="js/front.js"></script>
+	<!-- owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
 
 
+	<!-- jQuery scroll to -->
+	<script src="js/jquery.scrollTo.min.js"></script>
 
-<div class="se-pre-con"></div>
+	<!-- jQuery counter -->
+	<script src="js/jquery.counterup.min.js"></script>
+
+	<!-- jQuery parallax -->
+	<script src="js/jquery.parallax-1.1.3.js"></script>
+
+	<!-- main js file -->
+
+	<script src="js/front.js"></script>
 
 </body>
+
+<div class="se-pre-con"></div>
 
 </html>

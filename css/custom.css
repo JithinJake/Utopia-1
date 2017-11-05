@@ -117,6 +117,7 @@ p{
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
+
 .reference-item .reference-custom span .overlay,
 .reference-item .reference-custom span .overlay {
   display: block;
@@ -268,4 +269,29 @@ to {background-position: 100% 100%;}
     }
 }
 
+.search-category{
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+}
 
+
+.cart-header{
+	background-color: #13836c!important;
+	
+}
+
+.cart-header h2{
+	margin-top: 0px!important;
+}
+ 
+.imgContainer{
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.txtCentered{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+}
