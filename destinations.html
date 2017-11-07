@@ -91,7 +91,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand scrollTo" href="#intro">Utopia</a>
+				<a class="navbar-brand scrollTo" onclick="window.location = 'index.html';"><a href="./index.html">Utopia</a>
 			</div>
 			<div class="navbar-collapse collapse" id="navigation">
 				<ul class="nav navbar-nav navbar-right">
@@ -110,28 +110,33 @@
 	<!-- *** NAVBAR END *** -->
 	<!-- ******************************************* -->  
 	<!--Cart Section -->
-	<div class="cd-cart-container empty">
-		<a href="#0" class="cd-cart-trigger">Cart
-		  <ul class="count"> <!-- cart items count -->
-			 <li>0</li>
-			 <li>0</li>
-		 </ul> <!-- .count -->
-		</a>
-		<div class="cd-cart">
-			<div class="wrapper">
-				<header class="cart-header">
-					<h2>Your Trip Plan</h2>
-				</header>
-				<div class="body">
-					<ul>
-						<!-- products added to the cart will be inserted here using JavaScript -->
-					</ul>
-				</div>
-				<footer></footer>
-			</div>
-		</div> <!-- .cd-cart -->
-	</div> <!-- cd-cart-container --> 
-<!-- /Cart section -->
+    <div class="cd-cart-container empty">
+        <a href="#0" class="cd-cart-trigger">
+            Cart
+            <ul class="count"><!-- cart items count -->
+                <li>0</li>
+                <li>0</li>
+            </ul> <!-- .count -->
+        </a>
+
+        <div class="cd-cart">
+            <div class="wrapper">
+                <header class="cart-header">
+                    <h2>Your Trip Plan</h2>
+                </header>
+
+                <div class="body">
+                    <ul>
+                        <!-- products added to the cart will be inserted here using JavaScript -->
+                    </ul>
+                </div>
+
+                <footer>
+                    <a href="index.html#contact" class="checkout btn"><em>Checkout <span></span></em></a>
+                </footer>
+            </div>
+        </div> <!-- .cd-cart -->
+    </div><!-- cd-cart-container -->
 
 <div id="all">
 
