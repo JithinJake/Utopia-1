@@ -325,7 +325,7 @@ Main Components
   height: 72px;
   line-height: 72px;
   margin-right: 72px;
-  background: #2c97de;
+  background: #fff;
   color: rgba(255, 255, 255, 0);
   text-align: center;
   font-size: 1.8rem;
@@ -576,6 +576,7 @@ Main Components
           transition-duration: .55s;
 }
 .cart-open .cd-cart .checkout {
+  background-color: #2c97de;
   color: #ffffff;
   -webkit-transition: color .2s .3s;
   transition: color .2s .3s;
