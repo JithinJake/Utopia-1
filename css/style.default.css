@@ -462,19 +462,29 @@ WORKS / REFERENCES
 .reference-item .reference a .overlay h3 {
   text-transform: uppercase;
   font-weight: 500;
+  color: rgba(255,255,255,1.0)!important;
 }
 .reference-item .reference a img {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.reference-item .reference a .overlay,
-.reference-item .reference a .overlay {
+
+.reference-item .reference a:hover .overlay,
+.reference-item .reference a:focus .overlay {
   display: block;
   top: 0;
   opacity: 0.8;
   filter: alpha(opacity=60);
 }
+
+@media (max-width: 768px) {.reference-item .reference a .overlay,
+.reference-item .reference a .overlay{
+  display: block;
+  top: 0;
+  background-color: rgba(0,0,0,0.3)!important;
+  filter: alpha(opacity=40);
+} }
 .reference-item .reference a:hover img,
 .reference-item .reference a:focus img {
   -webkit-transform: scale(1.2, 1.2);
